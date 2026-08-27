@@ -3,19 +3,18 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 import { badRequest } from "@/lib/api";
-import { checkUpload, generateUploadName } from "@/lib/uploads";
+import { checkUpload, generateUploadName, UPLOAD_DIR } from "@/lib/uploads";
 
 /**
  * Admin panelindən şəkil yükləmə (ecommerce.md §3.4, §6).
- * Fayllar `public/uploads/` qovluğuna yazılır, cavabda `/uploads/...` yolu qayıdır.
+ * Fayllar `UPLOAD_DIR` qovluğuna (standart: `public/uploads/`) yazılır; cavabdakı
+ * `/uploads/...` yolunu `app/uploads/[...path]/route.ts` verir.
  *
  * Route middleware ilə qorunur — sessiyasız buraya çatmaq mümkün deyil.
  */
 
 // Bir sorğuda ən çox neçə fayl
 const MAX_FILES = 10;
-
-const UPLOAD_DIR = path.join(process.cwd(), "public", "uploads");
 
 export async function POST(request: Request) {
   let formData: FormData;

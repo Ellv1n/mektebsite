@@ -1,4 +1,5 @@
 import { randomBytes } from "node:crypto";
+import path from "node:path";
 
 import { ALLOWED_IMAGE_TYPES, MAX_UPLOAD_BYTES } from "./constants";
 
@@ -84,3 +85,20 @@ export function generateUploadName(extension: string): string {
   const random = randomBytes(6).toString("hex");
   return `${stamp}-${random}.${extension}`;
 }
+
+/**
+ * Yüklənən şəkillərin saxlandığı qovluq.
+ *
+ * Standart olaraq `public/uploads/`, amma `UPLOAD_DIR` env dəyəri ilə layihədən
+ * kənar sabit yola (məs. `/var/lib/sederek/uploads`) çıxarıla bilər — belədə
+ * yeni deploy və ya `next build` admin paneldən yüklənmiş şəkilləri itirmir.
+ */
+export const UPLOAD_DIR = process.env.UPLOAD_DIR
+  ? path.resolve(process.env.UPLOAD_DIR)
+  : path.join(process.cwd(), "public", "uploads");
+
+/**
+ * Kataloq şəkilləri (products/, categories/) həmişə layihənin içindədir —
+ * `UPLOAD_DIR` başqa yerə köçürüləndə də onları buradan tapmaq lazımdır.
+ */
+export const PUBLIC_UPLOAD_DIR = path.join(process.cwd(), "public", "uploads");
