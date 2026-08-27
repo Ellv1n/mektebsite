@@ -309,35 +309,33 @@ export async function POST(request: Request) {
   }
 
   // ── Müştəriyə təsdiq məktubu ─────────────────────────────────────
-  // E-poçt sahəsi könüllüdür: ünvan yazılmayıbsa göndəriləcək yer yoxdur.
+  // E-poçt sahəsi məcburidir (sxem yoxlayır), ona görə ünvan həmişə var.
   // Bu blok da sifarişi HEÇ VAXT ləğv etmir — xəta yalnız log-a düşür.
-  if (input.email) {
-    try {
-      const { subject, html, text } = renderOrderConfirmationEmail({
-        orderNumber,
-        createdAt,
-        firstName: input.firstName,
-        city: input.city,
-        address: input.address,
-        note: input.note,
-        items: emailItems,
-        subtotalQepik,
-        promoCode: promoDisplayCode,
-        discountPct,
-        discountQepik,
-        deliveryFeeQepik,
-        totalQepik,
-        trackingCode: displayTrackingCode,
-        trackingUrl,
-      });
+  try {
+    const { subject, html, text } = renderOrderConfirmationEmail({
+      orderNumber,
+      createdAt,
+      firstName: input.firstName,
+      city: input.city,
+      address: input.address,
+      note: input.note,
+      items: emailItems,
+      subtotalQepik,
+      promoCode: promoDisplayCode,
+      discountPct,
+      discountQepik,
+      deliveryFeeQepik,
+      totalQepik,
+      trackingCode: displayTrackingCode,
+      trackingUrl,
+    });
 
-      const result = await sendMail({ to: input.email, subject, html, text });
-      if (!result.sent && result.mode === "error") {
-        console.error(`[orders] #${orderNumber} müştəri təsdiqi göndərilmədi: ${result.reason}`);
-      }
-    } catch (error) {
-      console.error(`[orders] #${orderNumber} müştəri təsdiqi xətası:`, error);
+    const result = await sendMail({ to: input.email, subject, html, text });
+    if (!result.sent && result.mode === "error") {
+      console.error(`[orders] #${orderNumber} müştəri təsdiqi göndərilmədi: ${result.reason}`);
     }
+  } catch (error) {
+    console.error(`[orders] #${orderNumber} müştəri təsdiqi xətası:`, error);
   }
 
   return NextResponse.json(

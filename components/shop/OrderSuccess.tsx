@@ -19,7 +19,10 @@ type Summary = {
   orderNumber: string;
   trackingCode?: string | null;
   firstName: string;
-  /** Müştəri e-poçt yazıbsa — təsdiq məktubu həmin ünvana gedib */
+  /**
+   * Təsdiq məktubunun getdiyi ünvan. E-poçt indi məcburidir, amma bu sahə
+   * könüllü qalır: brauzerdə əvvəlki formatda saxlanmış xülasələr də açılsın.
+   */
   email?: string | null;
   items: {
     name: string;

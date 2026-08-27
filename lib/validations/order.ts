@@ -49,14 +49,14 @@ export const OrderInputSchema = z.object({
     .min(1, "Telefon nömrəsini daxil edin")
     .refine(isValidAzPhone, PHONE_ERROR_MESSAGE),
 
-  // Könüllü sahə: boş göndərilirsə `null` olmalıdır
+  // MƏCBURİ sahə: sifariş təsdiqi və status məktubları bu ünvana gedir.
+  // (Bazadakı `Order.email` sütunu köhnə sifarişlərə görə boş qala bilir.)
   email: z
     .string()
     .trim()
+    .min(1, "E-poçt ünvanını daxil edin")
     .max(200, "E-poçt ünvanı çox uzundur")
-    .email("E-poçt ünvanı düzgün deyil")
-    .nullable()
-    .default(null),
+    .email("E-poçt ünvanı düzgün deyil"),
 
   city: z
     .string()
