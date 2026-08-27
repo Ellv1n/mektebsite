@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/*
+  Sədərək — məktəb mövsümü palitrası (ecommerce.md §5)
+  Ağ fon, mavi/narıncı/sarı vurğular. Şən, təmiz, uşaq üçün cəlbedici.
+*/
+@theme {
+  /* Əsas mavi — header, linklər, əsas düymələr */
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-300: #93c5fd;
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+  --color-brand-800: #1e40af;
+  --color-brand-900: #1e3a8a;
+
+  /* Narıncı vurğu — "Səbətə at", endirim nişanları */
+  --color-accent-50: #fff7ed;
+  --color-accent-100: #ffedd5;
+  --color-accent-200: #fed7aa;
+  --color-accent-300: #fdba74;
+  --color-accent-400: #fb923c;
+  --color-accent-500: #f97316;
+  --color-accent-600: #ea580c;
+  --color-accent-700: #c2410c;
+
+  /* Sarı — banner və "YENİ" nişanları */
+  --color-sun-100: #fef9c3;
+  --color-sun-200: #fef08a;
+  --color-sun-300: #fde047;
+  --color-sun-400: #facc15;
+  --color-sun-500: #eab308;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+
+  --radius-card: 0.875rem;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1f2937;
+  font-family: var(--font-sans);
+  /* Telefonlarda üfüqi sürüşmənin qarşısını alır (ecommerce.md §5) */
+  overflow-x: hidden;
+}
+
+/* Toxunma hədəfləri telefonda ən azı 44px olsun */
+@media (pointer: coarse) {
+  button,
+  a[role="button"],
+  input[type="submit"] {
+    min-height: 44px;
+  }
+}
+
+/* Admin panelində sifariş çapı — kuryer üçün sadə çek görünüşü */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+    color: #000;
+  }
+}

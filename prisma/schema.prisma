@@ -1,0 +1,173 @@
+// Sədərək onlayn mağaza — verilənlər bazası sxemi
+// Baza: PostgreSQL 16 (docker-compose.yml ilə lokalda qalxır)
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─────────────────────────────────────────────────────────────
+// Kateqoriya
+// ─────────────────────────────────────────────────────────────
+model Category {
+  id        String    @id @default(cuid())
+  name      String // Azərbaycan dilində ad, məs. "Dəftərlər"
+  slug      String    @unique // URL üçün, məs. "defterler"
+  image     String? // /uploads/categories/... yolu
+  order     Int       @default(0) // saytda göstərilmə sırası
+  products  Product[]
+  createdAt DateTime  @default(now())
+
+  @@index([order])
+}
+
+// ─────────────────────────────────────────────────────────────
+// Məhsul
+// ─────────────────────────────────────────────────────────────
+model Product {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  description String?  @db.Text
+  price       Decimal  @db.Decimal(10, 2) // ₼
+  salePrice   Decimal? @db.Decimal(10, 2) // endirimli qiymət (varsa köhnə qiymət üstündən xətli göstərilir)
+  images      String[] // şəkil yolları, məs. ["/uploads/products/defter-60-vereq.jpg"]
+  colors      String[] // admin tərəfindən təyin edilmiş rənglər — müştəri dropdown-unu doldurur
+  stock       Int      @default(0)
+  isActive    Boolean  @default(true) // deaktiv məhsul saytda görünmür
+  isFeatured  Boolean  @default(false) // "Populyar məhsullar" bölməsi
+
+  categoryId String
+  category   Category    @relation(fields: [categoryId], references: [id])
+  orderItems OrderItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([categoryId])
+  @@index([isActive, isFeatured])
+  @@index([createdAt])
+}
+
+// ─────────────────────────────────────────────────────────────
+// Sifariş
+// ─────────────────────────────────────────────────────────────
+model Order {
+  id          String @id @default(cuid())
+  orderNumber String @unique // məs. "2026-0001"
+
+  // Müştərinin öz sifarişini saytda izləməsi üçün gizli kod (məs. "K7M2P9XQ").
+  // Sifariş nömrəsi ardıcıl olduğuna görə izləmə üçün yararsızdır —
+  // başqasının nömrəsini təxmin edib məlumatlarını görmək olardı.
+  trackingCode String @unique
+
+  // Müştəri məlumatları
+  firstName String // Ad
+  lastName  String // Soyad
+  phone     String // normalizə edilmiş format: +994501234567
+  email     String? // könüllü
+  city      String // Şəhər / Rayon
+  address   String // ətraflı çatdırılma ünvanı
+  note      String? // sifarişə ümumi qeyd
+
+  // Məbləğ — hamısı YALNIZ serverdə hesablanır
+  promoCode      String? // istifadə olunmuş kodun göstəriş forması, məs. "TABİB2026"
+  discountPct    Int      @default(0)
+  discountAmount Decimal  @default(0) @db.Decimal(10, 2)
+  subtotal       Decimal  @db.Decimal(10, 2)
+  // Çatdırılma haqqı — sifariş anındakı qayda ilə hesablanır və saxlanılır.
+  // Qayda sonradan dəyişsə, köhnə sifarişlərin məbləği olduğu kimi qalmalıdır.
+  deliveryFee    Decimal  @default(0) @db.Decimal(10, 2)
+  total          Decimal  @db.Decimal(10, 2)
+
+  paymentMethod String      @default("CASH_ON_DELIVERY") // yalnız nağd
+  status        OrderStatus @default(NEW)
+
+  items OrderItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([status])
+  @@index([createdAt])
+  @@index([phone])
+}
+
+// ─────────────────────────────────────────────────────────────
+// Sifariş sətri
+// Diqqət: color / gender / note müştərinin səbətdə etdiyi seçimlərdir və
+// admin panelində hər məhsulun yanında MÜTLƏQ göstərilir (ecommerce.md §2.4, §3.5).
+// ─────────────────────────────────────────────────────────────
+model OrderItem {
+  id String @id @default(cuid())
+
+  orderId String
+  order   Order  @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  productId String
+  product   Product @relation(fields: [productId], references: [id])
+
+  // Sifariş anındakı snapshot — məhsul sonradan dəyişsə də sifariş bütöv qalır
+  productName  String
+  productImage String?
+  price        Decimal @db.Decimal(10, 2)
+  quantity     Int
+
+  color  String? // müştərinin seçdiyi / yazdığı rəng
+  gender String? // "OGLAN" | "QIZ" | "FERQI_YOXDUR"
+  note   String? // müştərinin bu məhsula aid əlavə qeydi
+
+  @@index([orderId])
+  @@index([productId])
+}
+
+// ─────────────────────────────────────────────────────────────
+// Promokod
+// `code`           — göstəriş forması, məs. "TABİB2026"
+// `normalizedCode` — müqayisə forması, məs. "TABIB2026"
+//                    (lib/promo.ts → normalizePromo ilə yaradılır)
+// Bu ikinci sahə sayəsində TABİB2026 / TABIB2026 / tabib2026 variantlarının
+// hamısı tapılır və eyni kodun iki dəfə yazılması qarşısı alınır.
+// ─────────────────────────────────────────────────────────────
+model PromoCode {
+  id             String   @id @default(cuid())
+  code           String   @unique
+  normalizedCode String   @unique
+  discountPct    Int      @default(10)
+  isActive       Boolean  @default(true)
+  usageCount     Int      @default(0)
+  createdAt      DateTime @default(now())
+}
+
+// ─────────────────────────────────────────────────────────────
+// Admin istifadəçisi
+// ─────────────────────────────────────────────────────────────
+model Admin {
+  id           String   @id @default(cuid())
+  username     String   @unique
+  passwordHash String // bcrypt
+  createdAt    DateTime @default(now())
+}
+
+// ─────────────────────────────────────────────────────────────
+// Sifariş nömrəsi sayğacı
+// ecommerce.md-dəki sxemə ƏLAVƏDİR. Səbəb: "2026-0001" nömrəsini
+// `SELECT max(...)` ilə yaratmaq eyni anda gələn iki sifarişdə toqquşur.
+// Bu cədvəl atomik `UPDATE ... RETURNING` ilə təhlükəsiz nömrə verir.
+// ─────────────────────────────────────────────────────────────
+model OrderCounter {
+  year  Int @id
+  value Int @default(0)
+}
+
+enum OrderStatus {
+  NEW // Yeni
+  CONFIRMED // Təsdiqləndi
+  SHIPPING // Yolda
+  DELIVERED // Çatdırıldı
+  CANCELLED // Ləğv edildi
+}

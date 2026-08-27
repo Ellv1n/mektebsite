@@ -1,0 +1,3611 @@
+[
+  {
+    "name": "Dəftər — cip, 12 vərəq",
+    "slug": "defter-cip-12-vereq",
+    "category": "Dəftərlər",
+    "description": "12 vərəqlik nazik dəftər. Meşədə cip təsvirli parlaq üz qabığı.",
+    "colors": [],
+    "price": 0.6,
+    "salePrice": null,
+    "stock": 100,
+    "isFeatured": false,
+    "genderHint": "OGLAN",
+    "images": [
+      "/uploads/products/defter-cip-12-vereq.jpg",
+      "/uploads/products/defter-cip-12-vereq-2.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_lao9ihlao9ihlao9.jpg",
+      "Gemini_Generated_Image_ozho5wozho5wozho.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Dəftər — Copybook, sərt üz qabığı",
+    "slug": "defter-copybook-sert-uz",
+    "category": "Dəftərlər",
+    "description": "Sərt üz qabıqlı böyük dəftər. Payız meşəsi təsvirli qapaq, uzunömürlü tikiş.",
+    "colors": [],
+    "price": 3.5,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/defter-copybook-sert-uz.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_jl7fpjjl7fpjjl7f.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Dəftər — çiçək naxışlı, 24 vərəq",
+    "slug": "defter-cicek-naxisli-24-vereq",
+    "category": "Dəftərlər",
+    "description": "24 vərəqlik dəftər, parlaq çiçək fotolu üz qabığı ilə.",
+    "colors": [],
+    "price": 0.8,
+    "salePrice": null,
+    "stock": 80,
+    "isFeatured": false,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/defter-cicek-naxisli-24-vereq.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_93e3ch93e3ch93e3.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Dəftər — idman maşını, 24 vərəq",
+    "slug": "defter-idman-masini-24-vereq",
+    "category": "Dəftərlər",
+    "description": "24 vərəqlik dəftər, parlaq idman maşını təsvirli üz qabığı ilə.",
+    "colors": [],
+    "price": 0.8,
+    "salePrice": null,
+    "stock": 80,
+    "isFeatured": false,
+    "genderHint": "OGLAN",
+    "images": [
+      "/uploads/products/defter-idman-masini-24-vereq.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_kxkxiqkxkxiqkxkx.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Dəftər — ralli avtomobili, piramidalar",
+    "slug": "defter-ralli-avtomobili",
+    "category": "Dəftərlər",
+    "description": "Parlaq üz qabıqlı dəftər. Misir piramidaları fonunda ralli avtomobili təsviri.",
+    "colors": [],
+    "price": 1.2,
+    "salePrice": null,
+    "stock": 70,
+    "isFeatured": false,
+    "genderHint": "OGLAN",
+    "images": [
+      "/uploads/products/defter-ralli-avtomobili.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_z7wcj1z7wcj1z7wc.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Dəftər — retro avtomobil, 48 vərəq",
+    "slug": "defter-retro-avtomobil",
+    "category": "Dəftərlər",
+    "description": "Parlaq üz qabıqlı dəftər, üzərində retro idman avtomobili təsviri. Damalı səhifələr.",
+    "colors": [],
+    "price": 1.2,
+    "salePrice": null,
+    "stock": 60,
+    "isFeatured": false,
+    "genderHint": "OGLAN",
+    "images": [
+      "/uploads/products/defter-retro-avtomobil.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_8yzxuf8yzxuf8yzx.jpg"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "name": "Lüğət dəftəri — ingiliscə",
+    "slug": "luget-defteri-ingilisce",
+    "category": "Dəftərlər",
+    "description": "İngilis sözlərini yazmaq üçün lüğət dəftəri. Sərt üz qabığı, sütunlu səhifə quruluşu. İngilis-Azərbaycan-Rus.",
+    "colors": [],
+    "price": 5,
+    "salePrice": null,
+    "stock": 25,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/luget-defteri-ingilisce.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_dhnbxkdhnbxkdhnb.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Lüğət dəftəri — rusca-azərbaycanca",
+    "slug": "luget-defteri-rusca-azerbaycanca",
+    "category": "Dəftərlər",
+    "description": "Rus sözlərini yazmaq üçün lüğət dəftəri. Sərt üz qabığı, sütunlu səhifə quruluşu.",
+    "colors": [],
+    "price": 5,
+    "salePrice": null,
+    "stock": 25,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/luget-defteri-rusca-azerbaycanca.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_7ktvgu7ktvgu7ktv.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Spiral bloknot — dağ mənzərəsi",
+    "slug": "spiral-bloknot-dag-menzeresi",
+    "category": "Dəftərlər",
+    "description": "Yuxarıdan spiralli bloknot. Səhifələr asan qopur, qeyd və eskiz üçün uyğundur.",
+    "colors": [],
+    "price": 3,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/spiral-bloknot-dag-menzeresi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_p8b8t4p8b8t4p8b8.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Məktəbli gündəliyi — rusca, I-XI sinif, 2026-2027",
+    "slug": "gundelik-rusca-2026-2027",
+    "category": "Gündəliklər",
+    "description": "I-XI siniflər üçün rus dilində məktəbli gündəliyi (Школьный дневник). 2026-2027 tədris ili, yeni qiymətləndirmə qaydaları ilə.",
+    "colors": [],
+    "price": 4.5,
+    "salePrice": null,
+    "stock": 50,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/gundelik-rusca-2026-2027.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_zfl04wzfl04wzfl0.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Mənim Gündəliyim — I-IV sinif, 2026-2027",
+    "slug": "gundelik-1-4-sinif-2026-2027",
+    "category": "Gündəliklər",
+    "description": "I-IV sinif şagirdləri üçün 2026-2027 tədris ili gündəliyi. Rəngli üz qabığı, Azərbaycan dilində.",
+    "colors": [],
+    "price": 4,
+    "salePrice": null,
+    "stock": 60,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/gundelik-1-4-sinif-2026-2027.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_3cyie83cyie83cyi.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Mənim Gündəliyim — V-XI sinif, 2026-2027",
+    "slug": "gundelik-5-11-sinif-2026-2027",
+    "category": "Gündəliklər",
+    "description": "V-XI sinif şagirdləri üçün 2026-2027 tədris ili gündəliyi. Fənn simvolları ilə bəzədilmiş üz qabığı, Azərbaycan dilində.",
+    "colors": [],
+    "price": 4.5,
+    "salePrice": null,
+    "stock": 60,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/gundelik-5-11-sinif-2026-2027.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_rjz2gwrjz2gwrjz2.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Avtomatik qələm — Yinson Fashion",
+    "slug": "avtomatik-qelem-yinson-fashion",
+    "category": "Qələmlər",
+    "description": "Basmalı avtomatik qələm. Rezin tutacaq barmağı yormur, gövdədə parlaq naxışlar.",
+    "colors": [
+      "çəhrayı",
+      "tünd çəhrayı",
+      "yaşıl",
+      "mavi"
+    ],
+    "price": 1.2,
+    "salePrice": null,
+    "stock": 70,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/avtomatik-qelem-yinson-fashion.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_b6oxqub6oxqub6ox.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Diyircəkli qələm — Agilo 0.7 mm, mavi",
+    "slug": "diyircekli-qelem-agilo-mavi",
+    "category": "Qələmlər",
+    "description": "0.7 mm uclu yağ əsaslı diyircəkli qələm. Hamar yazı, mavi mürəkkəb.",
+    "colors": [
+      "mavi"
+    ],
+    "price": 0.6,
+    "salePrice": null,
+    "stock": 150,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/diyircekli-qelem-agilo-mavi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_ddcs62ddcs62ddcs.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Diyircəkli qələm — Cello Trio 1.0 mm, mavi",
+    "slug": "diyircekli-qelem-cello-trio-mavi",
+    "category": "Qələmlər",
+    "description": "1.0 mm uclu üçbucaq gövdəli diyircəkli qələm, mavi mürəkkəb. Rahat tutuş, hamar yazı.",
+    "colors": [
+      "mavi"
+    ],
+    "price": 0.6,
+    "salePrice": null,
+    "stock": 150,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/diyircekli-qelem-cello-trio-mavi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_saunpnsaunpnsaun.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Diyircəkli qələm — Cello Trio, qırmızı",
+    "slug": "diyircekli-qelem-cello-trio-qirmizi",
+    "category": "Qələmlər",
+    "description": "Üçbucaq gövdəli diyircəkli qələm, qırmızı mürəkkəb. Rahat tutuş, hamar yazı.",
+    "colors": [
+      "qırmızı"
+    ],
+    "price": 0.6,
+    "salePrice": null,
+    "stock": 120,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/diyircekli-qelem-cello-trio-qirmizi.jpg",
+      "/uploads/products/diyircekli-qelem-cello-trio-qirmizi-2.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_ixxq6nixxq6nixxq.jpg",
+      "Gemini_Generated_Image_z54lwoz54lwoz54l.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Diyircəkli qələm — Ellott Super S, mavi",
+    "slug": "diyircekli-qelem-ellott-super-mavi",
+    "category": "Qələmlər",
+    "description": "Rezin tutacaqlı diyircəkli qələm, mavi mürəkkəb. Uzun yazıda əli yormur.",
+    "colors": [
+      "mavi"
+    ],
+    "price": 0.6,
+    "salePrice": null,
+    "stock": 150,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/diyircekli-qelem-ellott-super-mavi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_qav6f0qav6f0qav6.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Diyircəkli qələm — Finegrip, mavi",
+    "slug": "diyircekli-qelem-finegrip-mavi",
+    "category": "Qələmlər",
+    "description": "Rezin tutacaqlı diyircəkli qələm, mavi mürəkkəb. Uzun yazıda barmağı yormur.",
+    "colors": [
+      "mavi"
+    ],
+    "price": 0.6,
+    "salePrice": null,
+    "stock": 150,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/diyircekli-qelem-finegrip-mavi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_t6aiu3t6aiu3t6ai.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Diyircəkli qələm — Hi-Juan, qara",
+    "slug": "diyircekli-qelem-hijuan-qara",
+    "category": "Qələmlər",
+    "description": "Şəffaf gövdəli diyircəkli qələm, qara mürəkkəb. Gündəlik yazı üçün, sərfəli qiymətə.",
+    "colors": [
+      "qara"
+    ],
+    "price": 0.5,
+    "salePrice": null,
+    "stock": 150,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/diyircekli-qelem-hijuan-qara.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_8tm1uq8tm1uq8tm1.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Diyircəkli qələm — klassik, narıncı gövdə",
+    "slug": "diyircekli-qelem-klassik-narinci",
+    "category": "Qələmlər",
+    "description": "Klassik altıbucaq gövdəli diyircəkli qələm. Yüngül, uzunömürlü, gündəlik istifadə üçün.",
+    "colors": [
+      "qırmızı"
+    ],
+    "price": 0.4,
+    "salePrice": null,
+    "stock": 200,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/diyircekli-qelem-klassik-narinci.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_908ycl908ycl908y.jpg"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "name": "Diyircəkli qələm — Korvina, mavi",
+    "slug": "diyircekli-qelem-korvina-mavi",
+    "category": "Qələmlər",
+    "description": "Klassik narıncı gövdəli diyircəkli qələm, mavi mürəkkəb. Onilliklərdir tanınan model.",
+    "colors": [
+      "mavi"
+    ],
+    "price": 0.4,
+    "salePrice": null,
+    "stock": 200,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/diyircekli-qelem-korvina-mavi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_nxm9zenxm9zenxm9.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Diyircəkli qələm — RENN, qara",
+    "slug": "diyircekli-qelem-renn-qara",
+    "category": "Qələmlər",
+    "description": "Şəffaf gövdəli diyircəkli qələm. Qapaqlı, geyim cibinə bərkidilən klipslə. Qara mürəkkəb.",
+    "colors": [
+      "qara"
+    ],
+    "price": 0.5,
+    "salePrice": null,
+    "stock": 150,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/diyircekli-qelem-renn-qara.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_55ce3e55ce3e55ce.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Diyircəkli qələm — Shang Yang, qırmızı",
+    "slug": "diyircekli-qelem-shang-yang-qirmizi",
+    "category": "Qələmlər",
+    "description": "Şəffaf gövdəli diyircəkli qələm, qırmızı mürəkkəb. Yoxlama və qeydlər üçün.",
+    "colors": [
+      "qırmızı"
+    ],
+    "price": 0.4,
+    "salePrice": null,
+    "stock": 150,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/diyircekli-qelem-shang-yang-qirmizi.jpg",
+      "/uploads/products/diyircekli-qelem-shang-yang-qirmizi-2.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_kypzpakypzpakypz.jpg",
+      "Gemini_Generated_Image_ooh8gdooh8gdooh8.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Diyircəkli qələm dəsti — Pensan Triball, 8 rəng",
+    "slug": "qelem-desti-pensan-triball-8-reng",
+    "category": "Qələmlər",
+    "description": "8 rəngli diyircəkli qələm dəsti, 1.0 mm uc. Üçbucaq gövdə rahat tutuş verir.",
+    "colors": [],
+    "price": 6,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/qelem-desti-pensan-triball-8-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_nr5qdtnr5qdtnr5q.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Gel qələm — M&G Heng Tech 0.7 mm, qara",
+    "slug": "gel-qelem-mg-hengtech-qara",
+    "category": "Qələmlər",
+    "description": "0.7 mm uclu gel qələm, qara mürəkkəb. Hamar yazı, tez quruyur. Qapaqlı, klipsli.",
+    "colors": [
+      "qara"
+    ],
+    "price": 0.7,
+    "salePrice": null,
+    "stock": 150,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/gel-qelem-mg-hengtech-qara.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_ish1d0ish1d0ish1.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Gel qələm — M&G Heng Tech 0.7 mm, qırmızı",
+    "slug": "gel-qelem-mg-hengtech-qirmizi",
+    "category": "Qələmlər",
+    "description": "0.7 mm uclu gel qələm. Hamar yazı, tez quruyan qırmızı mürəkkəb. Qapaqlı, klipsli.",
+    "colors": [
+      "qırmızı"
+    ],
+    "price": 0.7,
+    "salePrice": null,
+    "stock": 120,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/gel-qelem-mg-hengtech-qirmizi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_7z2ltu7z2ltu7z2l.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Gel qələm — Maxmow Ultra EX, mavi",
+    "slug": "gel-qelem-maxmow-ultra-mavi",
+    "category": "Qələmlər",
+    "description": "Mat qara gövdəli gel qələm, mavi mürəkkəb. Rahat tutuş, hamar yazı.",
+    "colors": [
+      "mavi"
+    ],
+    "price": 0.8,
+    "salePrice": null,
+    "stock": 120,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/gel-qelem-maxmow-ultra-mavi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_dxmeu8dxmeu8dxme.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Gel qələm — My-Tech 0.7 mm, mavi",
+    "slug": "gel-qelem-mytech-mavi",
+    "category": "Qələmlər",
+    "description": "0.7 mm uclu gel qələm, mavi mürəkkəb. Hamar yazı, qapaqlı gövdə.",
+    "colors": [
+      "mavi"
+    ],
+    "price": 0.7,
+    "salePrice": null,
+    "stock": 120,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/gel-qelem-mytech-mavi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_8dvj678dvj678dvj.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Gel qələm — pomponlu asma ilə",
+    "slug": "gel-qelem-pomponlu",
+    "category": "Qələmlər",
+    "description": "Gel qələm, üzərində tüklü pompon və personaj asma. Qız uşaqları üçün sevimli hədiyyə.",
+    "colors": [
+      "firuzəyi",
+      "mavi"
+    ],
+    "price": 2.5,
+    "salePrice": null,
+    "stock": 40,
+    "isFeatured": true,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/gel-qelem-pomponlu.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_nfg0gpnfg0gpnfg0.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Parıltılı gel qələm — 8 rəng",
+    "slug": "pariltili-gel-qelem-8-reng",
+    "category": "Qələmlər",
+    "description": "8 rəngli parıltılı (glitter) gel qələm dəsti. Şəffaf plastik qutuda. Açıqca, albom və rəsm bəzəmək üçün.",
+    "colors": [],
+    "price": 5.5,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": true,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/pariltili-gel-qelem-8-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_y9iaddy9iaddy9ia.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Pozulan gel qələm — 0.5 mm, mavi",
+    "slug": "pozulan-gel-qelem-mavi",
+    "category": "Qələmlər",
+    "description": "0.5 mm uclu pozulan gel qələm, mavi mürəkkəb. Ucundakı pozanla yazılanı izsiz silmək olur.",
+    "colors": [
+      "mavi"
+    ],
+    "price": 1,
+    "salePrice": null,
+    "stock": 100,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/pozulan-gel-qelem-mavi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_uogiinuogiinuogi.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Pozulan gel qələm — pastel, personajlı",
+    "slug": "pozulan-gel-qelem-pastel",
+    "category": "Qələmlər",
+    "description": "Yazını pozan gel qələm, yumşaq pastel rənglərdə. Ucundakı pozanla yazılanı izsiz silmək olur.",
+    "colors": [
+      "yaşıl",
+      "çəhrayı",
+      "bənövşəyi",
+      "mavi",
+      "krem"
+    ],
+    "price": 1.3,
+    "salePrice": null,
+    "stock": 70,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/pozulan-gel-qelem-pastel.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_c442kyc442kyc442.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Pozulan gel qələm — personajlı",
+    "slug": "pozulan-gel-qelem-personajli",
+    "category": "Qələmlər",
+    "description": "Yazını pozan gel qələm. Ucundakı pozanla yazılanı izsiz silmək olur. Müxtəlif personaj dizaynlarında.",
+    "colors": [
+      "qırmızı",
+      "qara",
+      "mavi",
+      "çəhrayı"
+    ],
+    "price": 1.2,
+    "salePrice": null,
+    "stock": 80,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/pozulan-gel-qelem-personajli.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_3ixgzk3ixgzk3ixg.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Sadə karandaş — HB, firuzəyi, pozanlı",
+    "slug": "sade-karandas-hb-firuzeyi",
+    "category": "Qələmlər",
+    "description": "HB sadə karandaş, ucunda pozan. Sadə firuzəyi gövdə, altıbucaq forma.",
+    "colors": [
+      "firuzəyi"
+    ],
+    "price": 0.6,
+    "salePrice": null,
+    "stock": 150,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/sade-karandas-hb-firuzeyi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_xlhetpxlhetpxlhe.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Sadə karandaş — HB, neon zolaqlı, pozanlı",
+    "slug": "sade-karandas-hb-neon-zolaqli",
+    "category": "Qələmlər",
+    "description": "HB sadə karandaş, ucunda pozan. Qara-neon zolaqlı gövdə.",
+    "colors": [
+      "yaşıl",
+      "sarı",
+      "çəhrayı",
+      "narıncı"
+    ],
+    "price": 0.6,
+    "salePrice": null,
+    "stock": 150,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/sade-karandas-hb-neon-zolaqli.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_lsulj9lsulj9lsul.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Sadə karandaş — HB, pastel, pozanlı",
+    "slug": "sade-karandas-hb-pastel",
+    "category": "Qələmlər",
+    "description": "HB sadə karandaş, ucunda pozan. Yumşaq pastel rəngli gövdə.",
+    "colors": [
+      "firuzəyi",
+      "yaşıl",
+      "bənövşəyi",
+      "sarı"
+    ],
+    "price": 0.7,
+    "salePrice": null,
+    "stock": 150,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/sade-karandas-hb-pastel.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_p62thwp62thwp62t.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Sadə karandaş — HB, pozanlı, rəngli",
+    "slug": "sade-karandas-hb-pozanli-rengli",
+    "category": "Qələmlər",
+    "description": "HB sadə karandaş, ucunda pozan. Parlaq rəngli gövdə, tutuş nöqtələri ilə.",
+    "colors": [
+      "bənövşəyi",
+      "narıncı",
+      "mavi",
+      "çəhrayı",
+      "yaşıl"
+    ],
+    "price": 0.7,
+    "salePrice": null,
+    "stock": 150,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/sade-karandas-hb-pozanli-rengli.jpg",
+      "/uploads/products/sade-karandas-hb-pozanli-rengli-2.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_lamtpulamtpulamt.jpg",
+      "Gemini_Generated_Image_xcbpanxcbpanxcbp.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Sadə karandaş — HB, tutuş çuxurlu",
+    "slug": "sade-karandas-hb-tutus-cuxurlu",
+    "category": "Qələmlər",
+    "description": "HB sadə karandaş. Gövdəsindəki çuxurlar barmaqların düzgün yerləşməsinə kömək edir — yazı öyrənən şagirdlər üçün.",
+    "colors": [
+      "mavi"
+    ],
+    "price": 0.6,
+    "salePrice": null,
+    "stock": 150,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/sade-karandas-hb-tutus-cuxurlu.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_i7iimwi7iimwi7ii.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəngli karandaş — 24 rəng, ikitərəfli",
+    "slug": "rengli-karandas-24-reng",
+    "category": "Rəngli karandaşlar",
+    "description": "24 rəngli ikitərəfli (Duo) rəngli karandaş dəsti. Karton qutuda, asma deşikli qablaşdırma.",
+    "colors": [],
+    "price": 6.5,
+    "salePrice": null,
+    "stock": 25,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/rengli-karandas-24-reng.jpg",
+      "/uploads/products/rengli-karandas-24-reng-2.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_1ix45s1ix45s1ix4.jpg",
+      "Gemini_Generated_Image_i722eki722eki722.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəngli karandaş — Berkand Erasable, 12 rəng",
+    "slug": "rengli-karandas-berkand-pozulan-12-reng",
+    "category": "Rəngli karandaşlar",
+    "description": "12 rəngli pozula bilən üçbucaq karandaş dəsti. Səhv çəkilən yeri pozanla silmək olur.",
+    "colors": [],
+    "price": 4.5,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/rengli-karandas-berkand-pozulan-12-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_y3zd22y3zd22y3zd.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəngli karandaş — Berkand Flamingo, 12 rəng, yonanla",
+    "slug": "rengli-karandas-berkand-flamingo-12-reng",
+    "category": "Rəngli karandaşlar",
+    "description": "12 rəngli üçbucaq karandaş dəsti. Flaminqo və çiçək dizaynlı qutu, hədiyyə yonan daxildir.",
+    "colors": [],
+    "price": 4.5,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/rengli-karandas-berkand-flamingo-12-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_wjy0t1wjy0t1wjy0.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəngli karandaş — Berkand, 12 rəng, kosmos",
+    "slug": "rengli-karandas-berkand-12-reng",
+    "category": "Rəngli karandaşlar",
+    "description": "12 rəngli üçbucaq karandaş dəsti. Kosmos dizaynlı qutu, toksik deyil.",
+    "colors": [],
+    "price": 4,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/rengli-karandas-berkand-12-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_snnlr5snnlr5snnl.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəngli karandaş — Chenhao, 12 rəng, prinses",
+    "slug": "rengli-karandas-chenhao-12-reng",
+    "category": "Rəngli karandaşlar",
+    "description": "12 rəngli karandaş dəsti, prinses dizaynlı qutuda. Toksik deyil, hamar yazır, asan pozulur.",
+    "colors": [],
+    "price": 3.8,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/rengli-karandas-chenhao-12-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_gy7apsgy7apsgy7a.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəngli karandaş — Color Life, 12 rəng",
+    "slug": "rengli-karandas-color-life-12-reng",
+    "category": "Rəngli karandaşlar",
+    "description": "12 rəngli karandaş dəsti. Sadə ağ qutu, kirpi dizaynı ilə. Toksik deyil.",
+    "colors": [],
+    "price": 4,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/rengli-karandas-color-life-12-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_ve215qve215qve21.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəngli karandaş — Color Pencils, 12 rəng, 3 mm",
+    "slug": "rengli-karandas-color-12-reng",
+    "category": "Rəngli karandaşlar",
+    "description": "12 rəngli üçbucaq karandaş dəsti, 3.0 mm özək. Toksik deyil, parlaq rənglər.",
+    "colors": [],
+    "price": 4,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/rengli-karandas-color-12-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_s9xvvrs9xvvrs9xv.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəngli karandaş — Ellott Colorful, 12 rəng",
+    "slug": "rengli-karandas-ellott-12-reng",
+    "category": "Rəngli karandaşlar",
+    "description": "12 rəngli karandaş dəsti. Şən personaj dizaynlı qutu, asma deşikli qablaşdırma.",
+    "colors": [],
+    "price": 4.2,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/rengli-karandas-ellott-12-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_p081ryp081ryp081 (1).jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəngli karandaş — GEST, 24 rəng",
+    "slug": "rengli-karandas-gest-24-reng",
+    "category": "Rəngli karandaşlar",
+    "description": "24 rəngli karandaş dəsti. Karton qutuda, asma deşikli qablaşdırma.",
+    "colors": [],
+    "price": 6,
+    "salePrice": null,
+    "stock": 25,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/rengli-karandas-gest-24-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_b7kp7pb7kp7pb7kp.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəngli karandaş — Jumbo, 12 rəng, yoğun",
+    "slug": "rengli-karandas-jumbo-12-reng",
+    "category": "Rəngli karandaşlar",
+    "description": "12 rəngli yoğun (Jumbo) karandaş dəsti. Qalın gövdə kiçik əllər üçün rahatdır, ucu tez sınmır.",
+    "colors": [],
+    "price": 5,
+    "salePrice": null,
+    "stock": 25,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/rengli-karandas-jumbo-12-reng.jpg",
+      "/uploads/products/rengli-karandas-jumbo-12-reng-2.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_j06i7jj06i7jj06i.jpg",
+      "Gemini_Generated_Image_l6gqipl6gqipl6gq.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəngli karandaş — Kalyaka-Malyaka, 12 rəng, süper yumşaq",
+    "slug": "rengli-karandas-kalyaka-12-reng",
+    "category": "Rəngli karandaşlar",
+    "description": "12 rəngli süper yumşaq karandaş dəsti. Genişlədilmiş özək, parlaq və doymuş rənglər. Bədii işlər üçün.",
+    "colors": [],
+    "price": 5.5,
+    "salePrice": null,
+    "stock": 25,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/rengli-karandas-kalyaka-12-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_rfero6rfero6rfer.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəngli karandaş — pozulan, 12 rəng",
+    "slug": "rengli-karandas-pozulan-12-reng",
+    "category": "Rəngli karandaşlar",
+    "description": "12 rəngli pozula bilən karandaş dəsti. Səhv çəkilən yeri pozanla silmək olur.",
+    "colors": [],
+    "price": 4,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/rengli-karandas-pozulan-12-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_qxntmjqxntmjqxnt.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəngli karandaş — Teacher Ding, 12 rəng",
+    "slug": "rengli-karandas-teacher-ding-12-reng",
+    "category": "Rəngli karandaşlar",
+    "description": "12 rəngli karandaş dəsti. Təbii taxta gövdə, parlaq rənglər. Karton qutuda.",
+    "colors": [],
+    "price": 3.5,
+    "salePrice": null,
+    "stock": 35,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/rengli-karandas-teacher-ding-12-reng.jpg",
+      "/uploads/products/rengli-karandas-teacher-ding-12-reng-2.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_d9ww0dd9ww0dd9ww.jpg",
+      "Gemini_Generated_Image_u7vi5yu7vi5yu7vi.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəngli karandaş — Teacher Ding, 24 rəng",
+    "slug": "rengli-karandas-teacher-ding-24-reng",
+    "category": "Rəngli karandaşlar",
+    "description": "24 rəngli karandaş dəsti. Toksik deyil, ekoloji təmiz materialdan. Karton qutuda.",
+    "colors": [],
+    "price": 5.5,
+    "salePrice": null,
+    "stock": 25,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/rengli-karandas-teacher-ding-24-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_cdt0uwcdt0uwcdt0.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəngli karandaş — Yalong Premium, 12 rəng",
+    "slug": "rengli-karandas-yalong-premium-12-reng",
+    "category": "Rəngli karandaşlar",
+    "description": "12 rəngli premium karandaş dəsti. Keyfiyyətli özək, hamar yazı və parlaq rənglər.",
+    "colors": [],
+    "price": 4.8,
+    "salePrice": null,
+    "stock": 25,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/rengli-karandas-yalong-premium-12-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_h7mqu4h7mqu4h7mq.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəngli karandaş — Yalong prinses, 12 rəng",
+    "slug": "rengli-karandas-yalong-prinses-12-reng",
+    "category": "Rəngli karandaşlar",
+    "description": "12 rəngli karandaş dəsti. Çəhrayı prinses dizaynlı qutu, keyfiyyətli özək, rahat tutuş.",
+    "colors": [],
+    "price": 4,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/rengli-karandas-yalong-prinses-12-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_z2r7q2z2r7q2z2r7.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəngli karandaş — Yalong, 12 rəng, üçbucaq",
+    "slug": "rengli-karandas-yalong-12-reng",
+    "category": "Rəngli karandaşlar",
+    "description": "12 rəngli üçbucaq formalı karandaş dəsti. Üçbucaq gövdə düzgün tutuşu öyrədir, ucu asan sınmır.",
+    "colors": [],
+    "price": 4.2,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/rengli-karandas-yalong-12-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_7tn3dy7tn3dy7tn3.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəngli karandaş — Yateer Mini Cute, 12 rəng",
+    "slug": "rengli-karandas-yateer-12-reng",
+    "category": "Rəngli karandaşlar",
+    "description": "12 rəngli taxtasız (plastik gövdəli) karandaş dəsti. Sınmağa davamlı, parlaq rənglər.",
+    "colors": [],
+    "price": 4.5,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/rengli-karandas-yateer-12-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_9egnez9egnez9egn.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəngli karandaş — Yateer, 12 rəng",
+    "slug": "rengli-karandas-yateer-mini-12-reng",
+    "category": "Rəngli karandaşlar",
+    "description": "12 rəngli qısa ölçülü karandaş dəsti. 3.0 mm özək, kiçik əllər üçün rahat.",
+    "colors": [],
+    "price": 3.8,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/rengli-karandas-yateer-mini-12-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_i15mhli15mhli15m.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəngli karandaş — Wealth, 12 rəng",
+    "slug": "rengli-karandas-wealth-12-reng",
+    "category": "Rəngli karandaşlar",
+    "description": "12 rəngli karandaş dəsti. Toksik deyil, asan yonulur. Karton qutuda, asma deşikli.",
+    "colors": [],
+    "price": 4,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/rengli-karandas-wealth-12-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_5i09c5i09c5i09c5.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Ətirli flomaster — 10 meyvə ətri",
+    "slug": "etirli-flomaster-10-reng",
+    "category": "Flomasterlər",
+    "description": "10 rəngli ətirli flomaster dəsti. Hər rəngin öz meyvə ətri var: portağal, limon, alma, çiyələk, moruq, nanə, kokos və s.",
+    "colors": [],
+    "price": 4.5,
+    "salePrice": null,
+    "stock": 25,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/etirli-flomaster-10-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_9zonsv9zonsv9zon.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Ətirli flomaster — 12 meyvə ətri",
+    "slug": "etirli-flomaster-12-reng",
+    "category": "Flomasterlər",
+    "description": "12 rəngli ətirli flomaster dəsti. Hər rəngin öz meyvə ətri var: albalı, portağal, limon, alma, çiyələk, moruq, böyürtkən, nanə, kokos və s.",
+    "colors": [],
+    "price": 5,
+    "salePrice": null,
+    "stock": 25,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/etirli-flomaster-12-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_jm892vjm892vjm89.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Lövhə markeri — qırmızı",
+    "slug": "lovhe-markeri-qirmizi",
+    "category": "Flomasterlər",
+    "description": "Ağ lövhə üçün quru silinən marker, qırmızı. İysiz, quru parça ilə asanlıqla silinir.",
+    "colors": [
+      "qırmızı"
+    ],
+    "price": 1.8,
+    "salePrice": null,
+    "stock": 50,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/lovhe-markeri-qirmizi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_vsz5ilvsz5ilvsz5.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Lövhə markeri — mavi",
+    "slug": "lovhe-markeri-mavi",
+    "category": "Flomasterlər",
+    "description": "Ağ lövhə üçün quru silinən marker. İysiz, quru parça ilə asanlıqla silinir.",
+    "colors": [
+      "mavi"
+    ],
+    "price": 1.8,
+    "salePrice": null,
+    "stock": 50,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/lovhe-markeri-mavi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_3071r43071r43071.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Lövhə markeri — yaşıl",
+    "slug": "lovhe-markeri-yasil",
+    "category": "Flomasterlər",
+    "description": "Ağ lövhə üçün quru silinən marker, yaşıl. İysiz, quru parça ilə asanlıqla silinir.",
+    "colors": [
+      "yaşıl"
+    ],
+    "price": 1.8,
+    "salePrice": null,
+    "stock": 50,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/lovhe-markeri-yasil.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_toa0pctoa0pctoa0.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Marker — Xin Si Wei 1.0 mm, qara",
+    "slug": "marker-xin-si-wei-qara",
+    "category": "Flomasterlər",
+    "description": "1.0 mm nazik uclu marker, qara. Dəqiq xətt, qapaqlı gövdə.",
+    "colors": [
+      "qara"
+    ],
+    "price": 1.2,
+    "salePrice": null,
+    "stock": 60,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/marker-xin-si-wei-qara.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_wd80xywd80xywd80.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Marker — Qianhe Fine Point 1.0 mm, mavi",
+    "slug": "marker-qianhe-mavi",
+    "category": "Flomasterlər",
+    "description": "1.0 mm nazik uclu marker, mavi. Dəqiq xətt, tez quruyan mürəkkəb.",
+    "colors": [
+      "mavi"
+    ],
+    "price": 1.2,
+    "salePrice": null,
+    "stock": 60,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/marker-qianhe-mavi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_w6jxjvw6jxjvw6jx.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Mətn işarələyici (highlighter) — Yalong, 5 rəng",
+    "slug": "metn-isareleyici-yalong-5-reng",
+    "category": "Flomasterlər",
+    "description": "Flüoressent mətn işarələyici. Kəsik uc həm nazik, həm enli xətt çəkir. Dərsliyi və konspekti işarələmək üçün.",
+    "colors": [
+      "narıncı",
+      "çəhrayı",
+      "yaşıl",
+      "sarı",
+      "mavi"
+    ],
+    "price": 1.5,
+    "salePrice": null,
+    "stock": 80,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/metn-isareleyici-yalong-5-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_yiulb7yiulb7yiul.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Permanent marker — Office Trend, qara",
+    "slug": "permanent-marker-qara",
+    "category": "Flomasterlər",
+    "description": "Silinməyən permanent marker. Kağız, karton, plastik və metal üzərində yazır. Tez quruyur.",
+    "colors": [
+      "qara"
+    ],
+    "price": 1.5,
+    "salePrice": null,
+    "stock": 50,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/permanent-marker-qara.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_e1hri3e1hri3e1hr.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Su rəngli flomaster — ikitərəfli, 10 rəng",
+    "slug": "su-rengli-flomaster-10-reng",
+    "category": "Flomasterlər",
+    "description": "İkitərəfli su əsaslı flomaster dəsti. Hər qələmin iki ucu var — nazik və qalın. 10 rəng, şəffaf çantada.",
+    "colors": [],
+    "price": 5.5,
+    "salePrice": null,
+    "stock": 25,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/su-rengli-flomaster-10-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_3c63t33c63t33c63.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Akvarel boya — 12 rəng, fırça ilə",
+    "slug": "akvarel-boya-12-reng",
+    "category": "Boyalar",
+    "description": "12 rəngli akvarel boya dəsti, metal qutuda. Fırça daxildir. Rənglər su ilə asan qarışır.",
+    "colors": [],
+    "price": 5,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/akvarel-boya-12-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_rm9khtrm9khtrm9k.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Akvarel boya — bal əsaslı, 12 rəng",
+    "slug": "akvarel-boya-bal-12-reng",
+    "category": "Boyalar",
+    "description": "12 rəngli bal əsaslı akvarel boya. Yumşaq və doymuş rənglər, plastik qutuda.",
+    "colors": [],
+    "price": 4.5,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/akvarel-boya-bal-12-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_sogogusogogusogo.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Kley karandaş — Elenkor, 21 q",
+    "slug": "kley-karandas-elenkor-21q",
+    "category": "Kley",
+    "description": "21 qramlıq karandaş kley. Kağız, karton, parça və foto üçün. Təmiz və təhlükəsiz tərkib.",
+    "colors": [],
+    "price": 1.2,
+    "salePrice": null,
+    "stock": 80,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/kley-karandas-elenkor-21q.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_g0q8pcg0q8pcg0q8.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Kley karandaş — Xincheng",
+    "slug": "kley-karandas-xincheng",
+    "category": "Kley",
+    "description": "Güclü yapışdırıcı karandaş kley. Kağız, karton və parça üçün. Toksik deyil.",
+    "colors": [],
+    "price": 1,
+    "salePrice": null,
+    "stock": 90,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/kley-karandas-xincheng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_ml979hml979hml97.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Kley karandaş — Yalong ayı, 15 q",
+    "slug": "kley-karandas-yalong-ayi-15q",
+    "category": "Kley",
+    "description": "15 qramlıq karandaş kley, sevimli ayı formalı qapaqla. Kağız və karton üçün, toksik deyil.",
+    "colors": [
+      "mavi",
+      "çəhrayı",
+      "ağ"
+    ],
+    "price": 1.3,
+    "salePrice": null,
+    "stock": 80,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/kley-karandas-yalong-ayi-15q.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_z9xgn2z9xgn2z9xg.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Kley karandaş — Yalong, 35 q",
+    "slug": "kley-karandas-yalong-35q",
+    "category": "Kley",
+    "description": "35 qramlıq güclü karandaş kley. Kağız, karton və parça üçün. Böyük ölçü, sərfəli istifadə.",
+    "colors": [],
+    "price": 1.6,
+    "salePrice": null,
+    "stock": 70,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/kley-karandas-yalong-35q.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_ruzutgruzutgruzu.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Məktəbli Kitabçası — I-XI sinif, 2026-2027",
+    "slug": "mektebli-kitabcasi-2026-2027",
+    "category": "Kitablar",
+    "description": "I-XI siniflər üçün 2026-2027 tədris ili məktəbli kitabçası. Kurikuluma uyğundur, yeni qiymətləndirmə qaydaları (FQ, KSQ, BSQ) və bal sistemi ilə.",
+    "colors": [],
+    "price": 3.5,
+    "salePrice": null,
+    "stock": 50,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/mektebli-kitabcasi-2026-2027.jpg",
+      "/uploads/products/mektebli-kitabcasi-2026-2027-2.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_upm81qupm81qupm8.jpg",
+      "Gemini_Generated_Image_w7sur3w7sur3w7su.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Albom — çiçək fotolu, 40 vərəq",
+    "slug": "albom-cicek-fotolu-40-vereq",
+    "category": "Albomlar",
+    "description": "40 vərəqlik albom. Parlaq çiçək fotolu üz qabığı, rəsm və qeyd üçün uyğun.",
+    "colors": [],
+    "price": 2.2,
+    "salePrice": null,
+    "stock": 35,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/albom-cicek-fotolu-40-vereq.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_j7fhw0j7fhw0j7fh.jpg"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "name": "Albom — çiçək fotolu, 60 vərəq",
+    "slug": "albom-cicek-fotolu-60-vereq",
+    "category": "Albomlar",
+    "description": "60 vərəqlik albom. Parlaq çiçək fotolu üz qabığı, rəsm və qeyd üçün uyğun.",
+    "colors": [],
+    "price": 2.8,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/albom-cicek-fotolu-60-vereq.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_bvtzocbvtzocbvtz.jpg"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "name": "Albom — kəpənək naxışlı, 40 vərəq",
+    "slug": "albom-kepenek-40-vereq",
+    "category": "Albomlar",
+    "description": "40 vərəqlik albom. Parlaq kəpənək və çiçək təsvirli üz qabığı.",
+    "colors": [],
+    "price": 2.2,
+    "salePrice": null,
+    "stock": 35,
+    "isFeatured": false,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/albom-kepenek-40-vereq.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_dyeaz0dyeaz0dyea.jpg"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "name": "Albom — ürək naxışlı, 60 vərəq",
+    "slug": "albom-urek-naxisli-60-vereq",
+    "category": "Albomlar",
+    "description": "60 vərəqlik albom. Parlaq üz qabığı, ürək və çiçək naxışları ilə.",
+    "colors": [],
+    "price": 2.8,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/albom-urek-naxisli-60-vereq.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_4iwlou4iwlou4iwl.jpg"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "name": "Rəsm albomu — Bakı mənzərəsi, 100 vərəq",
+    "slug": "resm-albomu-baki-100-vereq",
+    "category": "Albomlar",
+    "description": "100 vərəqlik böyük rəsm albomu. Bakı — Alov Qüllələri mənzərəli üz qabığı.",
+    "colors": [],
+    "price": 5.5,
+    "salePrice": null,
+    "stock": 25,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/resm-albomu-baki-100-vereq.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_nqxablnqxablnqxa.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəsm albomu — Cosmik Max, 20 vərəq",
+    "slug": "resm-albomu-cosmik-20-vereq",
+    "category": "Albomlar",
+    "description": "20 vərəqlik rəsm albomu. Qalın kağız, akvarel və quaş üçün uyğun. Paris mənzərəli üz qabığı.",
+    "colors": [],
+    "price": 2.5,
+    "salePrice": null,
+    "stock": 40,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/resm-albomu-cosmik-20-vereq.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_l6tb1tl6tb1tl6tb.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəsm albomu — çiçək naxışlı, 24 vərəq",
+    "slug": "resm-albomu-cicek-24-vereq",
+    "category": "Albomlar",
+    "description": "24 vərəqlik rəsm albomu. Klassik çiçək naxışlı üz qabığı.",
+    "colors": [],
+    "price": 2,
+    "salePrice": null,
+    "stock": 40,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/resm-albomu-cicek-24-vereq.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_nf859nnf859nnf85.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəsm albomu — Pretty Girl, 20 vərəq",
+    "slug": "resm-albomu-pretty-girl-20-vereq",
+    "category": "Albomlar",
+    "description": "20 vərəqlik rəsm albomu. Çəhrayı-mavi Pretty Girl dizaynlı üz qabığı.",
+    "colors": [],
+    "price": 2.5,
+    "salePrice": null,
+    "stock": 35,
+    "isFeatured": false,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/resm-albomu-pretty-girl-20-vereq.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_sxkmi1sxkmi1sxkm.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Rəsm albomu — şəhər mənzərəsi, 40 vərəq",
+    "slug": "resm-albomu-seher-40-vereq",
+    "category": "Albomlar",
+    "description": "40 vərəqlik rəsm albomu. Qalın kağız, şəhər mənzərəli parlaq üz qabığı.",
+    "colors": [],
+    "price": 2.8,
+    "salePrice": null,
+    "stock": 35,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/resm-albomu-seher-40-vereq.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_n7trwln7trwln7tr.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Spiral albom — Tac Mahal",
+    "slug": "spiral-albom-tac-mahal",
+    "category": "Albomlar",
+    "description": "Yandan spiralli eninə albom. Tac Mahal mənzərəli üz qabığı, rəsm və qeyd üçün qalın kağız.",
+    "colors": [],
+    "price": 3.5,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/spiral-albom-tac-mahal.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_vmoa48vmoa48vmoa.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — Captain America",
+    "slug": "penal-captain-america",
+    "category": "Penallar",
+    "description": "Captain America dizaynlı sərt penal, blister qablaşdırmada. Hədiyyə fiqur açarlığı ilə.",
+    "colors": [
+      "mavi"
+    ],
+    "price": 9.5,
+    "salePrice": null,
+    "stock": 15,
+    "isFeatured": false,
+    "genderHint": "OGLAN",
+    "images": [
+      "/uploads/products/penal-captain-america.jpg",
+      "/uploads/products/penal-captain-america-2.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_qxlhp9qxlhp9qxlh.jpg",
+      "Gemini_Generated_Image_xbifqzxbifqzxbif.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — dinozavr və dovşan naxışlı",
+    "slug": "penal-dinozavr-dovsan",
+    "category": "Penallar",
+    "description": "Silindr formalı yumşaq penal. Dinozavr və ya dovşan naxışlı variantlarda, zəncirbənd bağlama.",
+    "colors": [
+      "tünd çəhrayı",
+      "açıq çəhrayı"
+    ],
+    "price": 6.5,
+    "salePrice": null,
+    "stock": 20,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/penal-dinozavr-dovsan.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_hs6r8bhs6r8bhs6r.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — flaminqo naxışlı, holoqram",
+    "slug": "penal-flaminqo-holoqram",
+    "category": "Penallar",
+    "description": "Parlaq holoqram flaminqo naxışlı penal. Zəncirbənd bağlama, yumşaq gövdə.",
+    "colors": [
+      "çəhrayı",
+      "mavi"
+    ],
+    "price": 7.5,
+    "salePrice": null,
+    "stock": 18,
+    "isFeatured": false,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/penal-flaminqo-holoqram.jpg",
+      "/uploads/products/penal-flaminqo-holoqram-2.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_8hjram8hjram8hjr.jpg",
+      "Gemini_Generated_Image_l78bqjl78bqjl78b.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — Hero idman maşını, rezin applikasiyalı",
+    "slug": "penal-hero-masin",
+    "category": "Penallar",
+    "description": "Boz-narıncı penal, üzərində həcmli rezin idman maşını applikasiyası. Blister qablaşdırmada.",
+    "colors": [
+      "boz",
+      "narıncı"
+    ],
+    "price": 10,
+    "salePrice": null,
+    "stock": 12,
+    "isFeatured": false,
+    "genderHint": "OGLAN",
+    "images": [
+      "/uploads/products/penal-hero-masin.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_54om8t54om8t54om.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — hərbi, tank applikasiyalı",
+    "slug": "penal-herbi-tank",
+    "category": "Penallar",
+    "description": "Tünd boz parça penal, üzərində həcmli rezin tank applikasiyası. Zəncirbənd bağlama.",
+    "colors": [
+      "tünd boz"
+    ],
+    "price": 10,
+    "salePrice": null,
+    "stock": 12,
+    "isFeatured": false,
+    "genderHint": "OGLAN",
+    "images": [
+      "/uploads/products/penal-herbi-tank.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_cvi5iycvi5iycvi5.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — holoqram hərf naxışlı",
+    "slug": "penal-holoqram-herf",
+    "category": "Penallar",
+    "description": "Parlaq holoqram hərf naxışlı penal. İşığa görə rəngi dəyişir, zəncirbənd bağlama.",
+    "colors": [
+      "yaşıl",
+      "gümüşü",
+      "qara"
+    ],
+    "price": 7.5,
+    "salePrice": null,
+    "stock": 20,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/penal-holoqram-herf.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_noyrk5noyrk5noyr.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — Iron Man, Marvel",
+    "slug": "penal-iron-man",
+    "category": "Penallar",
+    "description": "Iron Man dizaynlı sərt penal. Zəncirbənd bağlama, hədiyyə Iron Man nişanı ilə.",
+    "colors": [
+      "qara-qırmızı"
+    ],
+    "price": 9.5,
+    "salePrice": null,
+    "stock": 15,
+    "isFeatured": true,
+    "genderHint": "OGLAN",
+    "images": [
+      "/uploads/products/penal-iron-man.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_m321qam321qam321.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — kəllə naxışlı, süni dəri",
+    "slug": "penal-kelle-naxisli",
+    "category": "Penallar",
+    "description": "Süni dəridən həcmli kəllə naxışlı penal. Antik qızılı-qəhvəyi rəng, zəncirbənd bağlama.",
+    "colors": [
+      "qəhvəyi"
+    ],
+    "price": 11,
+    "salePrice": null,
+    "stock": 10,
+    "isFeatured": false,
+    "genderHint": "OGLAN",
+    "images": [
+      "/uploads/products/penal-kelle-naxisli.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_enaf3kenaf3kenaf.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — qara süni dəri, sadə",
+    "slug": "penal-qara-suni-deri",
+    "category": "Penallar",
+    "description": "Sadə qara süni dəri penal. Silindr forma, zəncirbənd bağlama. Yeniyetmə və böyüklər üçün.",
+    "colors": [
+      "qara"
+    ],
+    "price": 6.5,
+    "salePrice": null,
+    "stock": 25,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/penal-qara-suni-deri.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_qxaaq2qxaaq2qxaa.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — qəzet naxışlı, boz",
+    "slug": "penal-qezet-naxisli-boz",
+    "category": "Penallar",
+    "description": "Qəzet çapı naxışlı boz penal. Sadə, yeniyetmələr üçün uyğun dizayn.",
+    "colors": [
+      "boz"
+    ],
+    "price": 7,
+    "salePrice": null,
+    "stock": 18,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/penal-qezet-naxisli-boz.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_8k2d6x8k2d6x8k2d.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — Niceday, bənövşəyi",
+    "slug": "penal-niceday-benovseyi",
+    "category": "Penallar",
+    "description": "Bənövşəyi parça penal, üzərində sehrli çubuq və ulduz naxışları. Zəncirbənd bağlama.",
+    "colors": [
+      "bənövşəyi"
+    ],
+    "price": 8.5,
+    "salePrice": null,
+    "stock": 15,
+    "isFeatured": false,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/penal-niceday-benovseyi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_t5l8u9t5l8u9t5l8.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — Niceday, mavi",
+    "slug": "penal-niceday-mavi",
+    "category": "Penallar",
+    "description": "Açıq mavi parça penal, üzərində sehrli çubuq və ulduz naxışları. Zəncirbənd bağlama.",
+    "colors": [
+      "mavi"
+    ],
+    "price": 8.5,
+    "salePrice": null,
+    "stock": 15,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/penal-niceday-mavi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_sx0kpnsx0kpnsx0k.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — Niceday, tünd çəhrayı",
+    "slug": "penal-niceday-cehrayi",
+    "category": "Penallar",
+    "description": "Tünd çəhrayı parça penal, üzərində sehrli çubuq və ulduz naxışları. Zəncirbənd bağlama.",
+    "colors": [
+      "çəhrayı"
+    ],
+    "price": 8.5,
+    "salePrice": null,
+    "stock": 15,
+    "isFeatured": false,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/penal-niceday-cehrayi.jpg",
+      "/uploads/products/penal-niceday-cehrayi-2.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_46om5846om5846om.jpg",
+      "Gemini_Generated_Image_zb4vazb4vazb4vaz.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — Racing, mavi",
+    "slug": "penal-racing-mavi",
+    "category": "Penallar",
+    "description": "Yarış maşını dizaynlı mavi penal. Zəncirbənd bağlama, hədiyyə maşın açarlığı ilə.",
+    "colors": [
+      "mavi"
+    ],
+    "price": 8.5,
+    "salePrice": null,
+    "stock": 15,
+    "isFeatured": false,
+    "genderHint": "OGLAN",
+    "images": [
+      "/uploads/products/penal-racing-mavi.jpg",
+      "/uploads/products/penal-racing-mavi-2.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_kh8etzkh8etzkh8e.jpg",
+      "Gemini_Generated_Image_s3ufcs3ufcs3ufcs.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — Sky Hunters təyyarə, xaki",
+    "slug": "penal-sky-hunters-xaki",
+    "category": "Penallar",
+    "description": "Xaki rəngli qatlanan penal, üzərində qırıcı təyyarə təsviri. Zəncirbənd bağlama.",
+    "colors": [
+      "xaki"
+    ],
+    "price": 8,
+    "salePrice": null,
+    "stock": 15,
+    "isFeatured": false,
+    "genderHint": "OGLAN",
+    "images": [
+      "/uploads/products/penal-sky-hunters-xaki.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_qaf7mfqaf7mfqaf7.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — Sofia prinses, bənövşəyi",
+    "slug": "penal-sofia-benovseyi",
+    "category": "Penallar",
+    "description": "Bənövşəyi parça penal, üzərində Sofia prinses təsviri. Zəncirbənd bağlama, geniş daxili bölmə.",
+    "colors": [
+      "bənövşəyi",
+      "tünd çəhrayı"
+    ],
+    "price": 8,
+    "salePrice": null,
+    "stock": 15,
+    "isFeatured": false,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/penal-sofia-benovseyi.jpg",
+      "/uploads/products/penal-sofia-benovseyi-2.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_m4360am4360am436.jpg",
+      "Gemini_Generated_Image_n2djq2n2djq2n2dj.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — Sofia prinses, çəhrayı",
+    "slug": "penal-sofia-cehrayi",
+    "category": "Penallar",
+    "description": "Çəhrayı parça penal, üzərində Sofia prinses təsviri. Zəncirbənd bağlama.",
+    "colors": [
+      "çəhrayı"
+    ],
+    "price": 8.5,
+    "salePrice": null,
+    "stock": 15,
+    "isFeatured": false,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/penal-sofia-cehrayi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_3fq0if3fq0if3fq0.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — Sofia, bənövşəyi, açarlıqla",
+    "slug": "penal-sofia-acarliqla",
+    "category": "Penallar",
+    "description": "Bənövşəyi Sofia penalı, blister qablaşdırmada. Hədiyyə prinses açarlığı ilə birlikdə.",
+    "colors": [
+      "bənövşəyi"
+    ],
+    "price": 9,
+    "salePrice": null,
+    "stock": 15,
+    "isFeatured": false,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/penal-sofia-acarliqla.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_pyrkf8pyrkf8pyrk.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — Stitch, çəhrayı, sərt",
+    "slug": "penal-stitch-cehrayi-sert",
+    "category": "Penallar",
+    "description": "Sərt gövdəli çəhrayı Stitch penalı. İki bölmə, ikiqat zəncirbənd.",
+    "colors": [
+      "çəhrayı"
+    ],
+    "price": 9.5,
+    "salePrice": null,
+    "stock": 15,
+    "isFeatured": true,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/penal-stitch-cehrayi-sert.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_pos54dpos54dpos5.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — Stitch, Time to Study",
+    "slug": "penal-stitch-time-to-study",
+    "category": "Penallar",
+    "description": "Stitch dizaynlı qatlanan penal. Zəncirbənd bağlama, hədiyyə açarlıqla birlikdə.",
+    "colors": [
+      "mavi"
+    ],
+    "price": 8,
+    "salePrice": null,
+    "stock": 15,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/penal-stitch-time-to-study.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_9xc0779xc0779xc0.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — su pərisi, çəhrayı",
+    "slug": "penal-su-perisi-cehrayi",
+    "category": "Penallar",
+    "description": "Çəhrayı penal, üzərində su pərisi təsviri. Hədiyyə olaraq su pərisi formalı asma ilə birlikdə.",
+    "colors": [
+      "çəhrayı"
+    ],
+    "price": 9.5,
+    "salePrice": null,
+    "stock": 12,
+    "isFeatured": false,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/penal-su-perisi-cehrayi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_3qvtic3qvtic3qvt.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — Superfast idman maşını, mavi",
+    "slug": "penal-superfast-mavi",
+    "category": "Penallar",
+    "description": "Mavi parça penal, üzərində idman maşını təsviri. Zəncirbənd bağlama, yan tutacaq.",
+    "colors": [
+      "mavi"
+    ],
+    "price": 9,
+    "salePrice": null,
+    "stock": 15,
+    "isFeatured": false,
+    "genderHint": "OGLAN",
+    "images": [
+      "/uploads/products/penal-superfast-mavi.jpg",
+      "/uploads/products/penal-superfast-mavi-2.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_1znr3e1znr3e1znr.jpg",
+      "Gemini_Generated_Image_hiq9vthiq9vthiq9.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — süni dəri, heyvan naxışlı",
+    "slug": "penal-suni-deri-heyvan-naxisli",
+    "category": "Penallar",
+    "description": "Süni dəridən silindr penal. Tısbağa-balıq və ya ayı naxışlı variantlarda, zəncirbənd bağlama.",
+    "colors": [
+      "krem",
+      "mavi"
+    ],
+    "price": 6.5,
+    "salePrice": null,
+    "stock": 20,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/penal-suni-deri-heyvan-naxisli.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_ya2c6xya2c6xya2c.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — Tom və Jerry",
+    "slug": "penal-tom-ve-jerry",
+    "category": "Penallar",
+    "description": "Tom və Jerry dizaynlı qatlanan penal. Zəncirbənd bağlama, Jerry formalı asma ilə.",
+    "colors": [
+      "açıq yaşıl"
+    ],
+    "price": 9,
+    "salePrice": null,
+    "stock": 15,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/penal-tom-ve-jerry.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_cois1ycois1ycois.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — tvid naxışlı, qəhvəyi",
+    "slug": "penal-tvid-qehveyi",
+    "category": "Penallar",
+    "description": "Qəhvəyi tvid naxışlı sadə penal. Yeniyetmə və böyüklər üçün uyğun dizayn.",
+    "colors": [
+      "qəhvəyi"
+    ],
+    "price": 7,
+    "salePrice": null,
+    "stock": 18,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/penal-tvid-qehveyi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_nm52ienm52ienm52.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — tvid naxışlı, mavi",
+    "slug": "penal-tvid-mavi",
+    "category": "Penallar",
+    "description": "Mavi tvid naxışlı sadə penal. Silindr forma, zəncirbənd bağlama.",
+    "colors": [
+      "mavi"
+    ],
+    "price": 7,
+    "salePrice": null,
+    "stock": 18,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/penal-tvid-mavi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_skm1sdskm1sdskm1.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Penal — Zootopia",
+    "slug": "penal-zootopia",
+    "category": "Penallar",
+    "description": "Zootopia dizaynlı qatlanan penal. Zəncirbənd bağlama, hədiyyə açarlıqla birlikdə.",
+    "colors": [
+      "mavi"
+    ],
+    "price": 8.5,
+    "salePrice": null,
+    "stock": 15,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/penal-zootopia.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_ip35w7ip35w7ip35.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Termos — Bubble Cute, pişik, krem",
+    "slug": "termos-bubble-cute-krem",
+    "category": "Termoslar",
+    "description": "Krem rəngli termos, yaşıl qapaqla. Üzərində zərif pişik və çiçək təsviri. Düyməli açılan qapaq.",
+    "colors": [
+      "krem"
+    ],
+    "price": 20,
+    "salePrice": null,
+    "stock": 12,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/termos-bubble-cute-krem.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_v4b1l8v4b1l8v4b1.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Termos — Dreams, tünd mavi",
+    "slug": "termos-dreams-tund-mavi",
+    "category": "Termoslar",
+    "description": "Tünd mavi termos, sarı qapaqla. Düyməli açılma, paslanmayan polad gövdə.",
+    "colors": [
+      "tünd mavi"
+    ],
+    "price": 23,
+    "salePrice": null,
+    "stock": 10,
+    "isFeatured": false,
+    "genderHint": "OGLAN",
+    "images": [
+      "/uploads/products/termos-dreams-tund-mavi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_85ym8b85ym8b85ym.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Termos — Enjoy Life, boz",
+    "slug": "termos-enjoy-life-boz",
+    "category": "Termoslar",
+    "description": "Boz rəngli sadə termos. Düyməli açılan qapaq, paslanmayan polad gövdə. Yeniyetmə və böyüklər üçün.",
+    "colors": [
+      "boz"
+    ],
+    "price": 20,
+    "salePrice": null,
+    "stock": 12,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/termos-enjoy-life-boz.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_uffb9nuffb9nuffb.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Termos — it pəncəsi naxışlı, krem",
+    "slug": "termos-it-pencesi-krem",
+    "category": "Termoslar",
+    "description": "Krem rəngli termos, üzərində sevimli it və pəncə naxışları. Düyməli açılan qapaq, şəffaf üst qapaq.",
+    "colors": [
+      "krem"
+    ],
+    "price": 19,
+    "salePrice": null,
+    "stock": 12,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/termos-it-pencesi-krem.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_uak6lauak6lauak6.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Termos — it şəkilli, bej",
+    "slug": "termos-it-sekilli-bej",
+    "category": "Termoslar",
+    "description": "Paslanmayan poladdan termos. Düyməli açılan qapaq, şəffaf üst qapaq. Üzərində sevimli it təsviri.",
+    "colors": [
+      "bej"
+    ],
+    "price": 22,
+    "salePrice": null,
+    "stock": 12,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/termos-it-sekilli-bej.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_308bez308bez308b.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Termos — panda şəkilli, krem",
+    "slug": "termos-panda-krem",
+    "category": "Termoslar",
+    "description": "Paslanmayan poladdan panda dizaynlı termos. Düyməli açılan qapaq, şəffaf üst qapaq.",
+    "colors": [
+      "krem"
+    ],
+    "price": 22,
+    "salePrice": null,
+    "stock": 10,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/termos-panda-krem.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_7v6l7v6l7v6l7v6l.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Termos — panda, ağ, tutacaqlı",
+    "slug": "termos-panda-ag-tutacaqli",
+    "category": "Termoslar",
+    "description": "Ağ termos, üzərində panda və bambuk təsvirləri. Daşıma tutacağı, düyməli açılan qapaq.",
+    "colors": [
+      "ağ"
+    ],
+    "price": 20,
+    "salePrice": null,
+    "stock": 12,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/termos-panda-ag-tutacaqli.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_wlghtbwlghtbwlgh.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Termos — Stitch, krem rəng",
+    "slug": "termos-stitch-krem",
+    "category": "Termoslar",
+    "description": "Paslanmayan poladdan Stitch dizaynlı termos. Düyməli açılan qapaq, qızıl rəngli detallar.",
+    "colors": [
+      "krem"
+    ],
+    "price": 24,
+    "salePrice": null,
+    "stock": 10,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/termos-stitch-krem.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_5o8l3x5o8l3x5o8l.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Termos — Stitch, qara",
+    "slug": "termos-stitch-qara",
+    "category": "Termoslar",
+    "description": "Qara Stitch dizaynlı termos. Düyməli açılan qapaq, qızılı detallar, paslanmayan polad gövdə.",
+    "colors": [
+      "qara"
+    ],
+    "price": 25,
+    "salePrice": null,
+    "stock": 10,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/termos-stitch-qara.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_l1s827l1s827l1s8.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Termos — temperatur göstəricili, ağ",
+    "slug": "termos-temperatur-gostericili-ag",
+    "category": "Termoslar",
+    "description": "Qapağında rəqəmsal temperatur ekranı olan ağ termos. Sadə dizayn, paslanmayan polad.",
+    "colors": [
+      "ağ"
+    ],
+    "price": 26,
+    "salePrice": null,
+    "stock": 10,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/termos-temperatur-gostericili-ag.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_86vwnq86vwnq86vw.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Termos — temperatur göstəricili, krem",
+    "slug": "termos-temperatur-gostericili-krem",
+    "category": "Termoslar",
+    "description": "Qapağında rəqəmsal temperatur göstəricisi olan termos stəkan. İçkinin hərarətini ekranda göstərir.",
+    "colors": [
+      "krem"
+    ],
+    "price": 28,
+    "salePrice": null,
+    "stock": 8,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/termos-temperatur-gostericili-krem.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_7gd6oy7gd6oy7gd6.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Termos — timsah, Good Day, yaşıl",
+    "slug": "termos-timsah-yasil",
+    "category": "Termoslar",
+    "description": "Ağ-yaşıl termos, üzərində şən timsah təsviri. Düyməli açılan qapaq, daşıma tutacağı.",
+    "colors": [
+      "yaşıl"
+    ],
+    "price": 19,
+    "salePrice": null,
+    "stock": 12,
+    "isFeatured": false,
+    "genderHint": "OGLAN",
+    "images": [
+      "/uploads/products/termos-timsah-yasil.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_x80u8gx80u8gx80u.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Uşaq termosu — it şəkilli, tutacaqlı",
+    "slug": "usaq-termosu-it-tutacaqli",
+    "category": "Termoslar",
+    "description": "Uşaqlar üçün kiçik termos. Daşıma tutacağı, düyməli açılan qapaq, pastel damalı naxış.",
+    "colors": [
+      "krem-mavi"
+    ],
+    "price": 18,
+    "salePrice": null,
+    "stock": 12,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/usaq-termosu-it-tutacaqli.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_l4d385l4d385l4d3.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Uşaq termosu — Lucky Day, krem-çəhrayı",
+    "slug": "usaq-termosu-lucky-day",
+    "category": "Termoslar",
+    "description": "Uşaqlar üçün kiçik termos. Daşıma tutacağı, düyməli açılan qapaq, sevimli personaj təsviri.",
+    "colors": [
+      "krem-çəhrayı"
+    ],
+    "price": 18,
+    "salePrice": null,
+    "stock": 12,
+    "isFeatured": false,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/usaq-termosu-lucky-day.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_s7jss0s7jss0s7js.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Uşaq termosu — pişik naxışlı, çəhrayı",
+    "slug": "usaq-termosu-pisik-cehrayi",
+    "category": "Termoslar",
+    "description": "Uşaqlar üçün termos. Ağ-çəhrayı gövdə, sevimli pişik təsvirləri, daşıma tutacağı və düyməli qapaq.",
+    "colors": [
+      "çəhrayı"
+    ],
+    "price": 18,
+    "salePrice": null,
+    "stock": 12,
+    "isFeatured": false,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/usaq-termosu-pisik-cehrayi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_usj4t9usj4t9usj4.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Pozan — 4B, rəngli nöqtəli",
+    "slug": "pozan-4b-rengli-noqteli",
+    "category": "Pozanlar",
+    "description": "4B yumşaq pozan, plastik qoruyucu qutuda. Rəngli nöqtəli dizayn.",
+    "colors": [
+      "sarı",
+      "çəhrayı",
+      "mavi",
+      "yaşıl"
+    ],
+    "price": 0.9,
+    "salePrice": null,
+    "stock": 90,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/pozan-4b-rengli-noqteli.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_ehykt4ehykt4ehyk.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Pozan — ABC Perfect White",
+    "slug": "pozan-abc-perfect-white",
+    "category": "Pozanlar",
+    "description": "Ağ yumşaq pozan. Karandaş izini tam silir, kağızda ləkə qoymur.",
+    "colors": [
+      "ağ"
+    ],
+    "price": 0.6,
+    "salePrice": null,
+    "stock": 120,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/pozan-abc-perfect-white.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_nqfe3knqfe3knqfe.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Pozan — Accord Soft Clean",
+    "slug": "pozan-accord-soft-clean",
+    "category": "Pozanlar",
+    "description": "Yumşaq ağ pozan. Karandaş izini tam silir, kağızda ləkə qoymur.",
+    "colors": [
+      "ağ"
+    ],
+    "price": 0.6,
+    "salePrice": null,
+    "stock": 120,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/pozan-accord-soft-clean.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_asis71asis71asis.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Pozan — Cheer King, tozsuz",
+    "slug": "pozan-cheer-king-tozsuz",
+    "category": "Pozanlar",
+    "description": "2B, 4B və 6B karandaşlar üçün tozsuz pozan. Silərkən dağılmır, kağızı cırmır.",
+    "colors": [
+      "ağ"
+    ],
+    "price": 0.7,
+    "salePrice": null,
+    "stock": 110,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/pozan-cheer-king-tozsuz.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_jgsj3njgsj3njgsj.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Pozan — Glandiiy, tozsuz",
+    "slug": "pozan-glandiiy-tozsuz",
+    "category": "Pozanlar",
+    "description": "2B, 4B və 6B karandaşlar üçün tozsuz pozan. Silərkən dağılmır, təmiz iz qoymur.",
+    "colors": [
+      "ağ"
+    ],
+    "price": 0.7,
+    "salePrice": null,
+    "stock": 110,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/pozan-glandiiy-tozsuz.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_y0kgv4y0kgv4y0kg.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Pozan — Kaisei Cat, kosmos naxışlı",
+    "slug": "pozan-kaisei-kosmos",
+    "category": "Pozanlar",
+    "description": "Kosmos və astronavt naxışlı yumşaq pozan. Rəngli variantlarda, kağızı cırmır.",
+    "colors": [
+      "yaşıl",
+      "çəhrayı",
+      "bənövşəyi",
+      "mavi"
+    ],
+    "price": 1.1,
+    "salePrice": null,
+    "stock": 80,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/pozan-kaisei-kosmos.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_ut05sbut05sbut05.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Pozan — qradiyent rəngli",
+    "slug": "pozan-qradiyent-rengli",
+    "category": "Pozanlar",
+    "description": "Rəng keçidli (qradiyent) yumşaq pozan. Üzərində ingiliscə yazı, kosmos naxışları.",
+    "colors": [
+      "mavi",
+      "narıncı-çəhrayı",
+      "yaşıl"
+    ],
+    "price": 1,
+    "salePrice": null,
+    "stock": 80,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/pozan-qradiyent-rengli.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_od5tmsod5tmsod5t.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Pozan — NANO, iri ölçülü",
+    "slug": "pozan-nano",
+    "category": "Pozanlar",
+    "description": "Yumşaq iri pozan. Kağızı cırmır, iz qoymur, ftalatsız tərkib.",
+    "colors": [
+      "ağ",
+      "qara"
+    ],
+    "price": 0.8,
+    "salePrice": null,
+    "stock": 100,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/pozan-nano.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_5aqb1j5aqb1j5aqb.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Pozan — personajlı, kiçik",
+    "slug": "pozan-personajli-kicik",
+    "category": "Pozanlar",
+    "description": "Rəngli personaj etiketli yumşaq pozan. Kağızı cırmadan təmiz silir.",
+    "colors": [
+      "çəhrayı",
+      "bənövşəyi",
+      "mavi",
+      "tünd çəhrayı"
+    ],
+    "price": 0.9,
+    "salePrice": null,
+    "stock": 90,
+    "isFeatured": false,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/pozan-personajli-kicik.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_9gko679gko679gko.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Pozan — rəngli zolaqlı, iri",
+    "slug": "pozan-rengli-zolaqli",
+    "category": "Pozanlar",
+    "description": "Rəngli zolaqlardan ibarət iri yumşaq pozan. Karandaş izini təmiz silir.",
+    "colors": [
+      "rəngarəng"
+    ],
+    "price": 1.2,
+    "salePrice": null,
+    "stock": 70,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/pozan-rengli-zolaqli.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_e79dhee79dhee79d.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Pozan — Stitch",
+    "slug": "pozan-stitch",
+    "category": "Pozanlar",
+    "description": "Stitch şəkilli yumşaq pozan. Müxtəlif rəng variantlarında.",
+    "colors": [
+      "çəhrayı",
+      "mavi",
+      "bənövşəyi"
+    ],
+    "price": 1,
+    "salePrice": null,
+    "stock": 80,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/pozan-stitch.jpg",
+      "/uploads/products/pozan-stitch-2.jpg",
+      "/uploads/products/pozan-stitch-3.jpeg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_6xkyun6xkyun6xky.jpg",
+      "Gemini_Generated_Image_8u7kju8u7kju8u7k.jpg",
+      "WhatsApp Image 2026-08-25 at 09.52.12.jpeg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Pozan — Tian Shi, qırmızı-mavi",
+    "slug": "pozan-tian-shi-qirmizi-mavi",
+    "category": "Pozanlar",
+    "description": "Klassik iki tərəfli pozan: mavi tərəf mürəkkəb, qırmızı tərəf karandaş üçün.",
+    "colors": [
+      "qırmızı-mavi"
+    ],
+    "price": 0.4,
+    "salePrice": null,
+    "stock": 150,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/pozan-tian-shi-qirmizi-mavi.jpg",
+      "/uploads/products/pozan-tian-shi-qirmizi-mavi-2.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_jtgppwjtgppwjtgp.jpg",
+      "Gemini_Generated_Image_xdch2fxdch2fxdch.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Yonan — ayı formalı, muncuqlu",
+    "slug": "yonan-ayi-muncuqlu",
+    "category": "Yonanlar",
+    "description": "Ayı formalı ikideşikli yonan. Üst hissəsində rəngli muncuqlar, altında yonqar qutusu.",
+    "colors": [
+      "mavi",
+      "çəhrayı",
+      "yaşıl",
+      "bənövşəyi"
+    ],
+    "price": 1.8,
+    "salePrice": null,
+    "stock": 40,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/yonan-ayi-muncuqlu.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_abnbepabnbepabnb.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Yonan — ayı şəkilli, şəffaf qutulu",
+    "slug": "yonan-ayi-seffaf-qutulu",
+    "category": "Yonanlar",
+    "description": "İki deşikli yonan, şəffaf rəngli qutuda. Üzərində sevimli ayı təsviri.",
+    "colors": [
+      "yaşıl",
+      "qəhvəyi",
+      "bal rəngi"
+    ],
+    "price": 1.7,
+    "salePrice": null,
+    "stock": 45,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/yonan-ayi-seffaf-qutulu.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_hbn02shbn02shbn0.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Yonan — güllə formalı, qutulu",
+    "slug": "yonan-gulle-formali",
+    "category": "Yonanlar",
+    "description": "Güllə formalı şəffaf yonan. Yonqarlar alt qutuda toplanır, dağılmır.",
+    "colors": [
+      "yaşıl",
+      "bənövşəyi",
+      "mavi",
+      "çəhrayı"
+    ],
+    "price": 1.4,
+    "salePrice": null,
+    "stock": 50,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/yonan-gulle-formali.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_hrvtsrhrvtsrhrvt.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Yonan — qutulu, plastik",
+    "slug": "yonan-qutulu-plastik",
+    "category": "Yonanlar",
+    "description": "Qapaqlı plastik qutulu ikili yonan. Yonqarlar qutunun içində toplanır, dağılmır. Parlaq rənglərdə.",
+    "colors": [
+      "sarı",
+      "narıncı",
+      "mavi",
+      "çəhrayı"
+    ],
+    "price": 1.2,
+    "salePrice": null,
+    "stock": 40,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/yonan-qutulu-plastik.png"
+    ],
+    "sourceFiles": [
+      "ChatGPT Image Aug 25, 2026, 10_09_44 AM.png"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Yonan — Niall, ikideşikli, qutulu",
+    "slug": "yonan-niall-ikidesikli",
+    "category": "Yonanlar",
+    "description": "İki deşikli yonan — həm adi, həm yoğun karandaş üçün. Şəffaf qutuda yonqar toplanır. Pastel rənglərdə.",
+    "colors": [
+      "çəhrayı",
+      "mavi",
+      "bənövşəyi",
+      "yaşıl",
+      "narıncı"
+    ],
+    "price": 1.3,
+    "salePrice": null,
+    "stock": 50,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/yonan-niall-ikidesikli.jpg",
+      "/uploads/products/yonan-niall-ikidesikli-2.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_85vl2v85vl2v85vl.jpg",
+      "Gemini_Generated_Image_ti8u5nti8u5nti8u.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Yonan — silindr qutulu, neon",
+    "slug": "yonan-silindr-neon",
+    "category": "Yonanlar",
+    "description": "Silindr formalı qapaqlı yonan. Neon rənglərdə, yonqar qutusu ilə.",
+    "colors": [
+      "mavi",
+      "narıncı",
+      "sarı",
+      "çəhrayı"
+    ],
+    "price": 1.4,
+    "salePrice": null,
+    "stock": 50,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/yonan-silindr-neon.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_iqoilriqoilriqoi.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Yonan — Stitch, qapaqlı",
+    "slug": "yonan-stitch",
+    "category": "Yonanlar",
+    "description": "Stitch şəkilli qapaqlı yonan. Şəffaf gövdə, yonqar qutusu ilə.",
+    "colors": [
+      "çəhrayı",
+      "mavi"
+    ],
+    "price": 1.5,
+    "salePrice": null,
+    "stock": 35,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/yonan-stitch.jpg",
+      "/uploads/products/yonan-stitch-2.jpg",
+      "/uploads/products/yonan-stitch-3.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_1teyr51teyr51tey.jpg",
+      "Gemini_Generated_Image_vziy34vziy34vziy.jpg",
+      "Gemini_Generated_Image_yyafjayyafjayyaf.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Yonan və pozan — Daimarse, birlikdə",
+    "slug": "yonan-pozan-daimarse",
+    "category": "Yonanlar",
+    "description": "İki deşikli yonan və pozan bir gövdədə. Yonqarlar şəffaf qutuda toplanır.",
+    "colors": [
+      "mavi",
+      "sarı",
+      "yaşıl",
+      "çəhrayı"
+    ],
+    "price": 1.6,
+    "salePrice": null,
+    "stock": 45,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/yonan-pozan-daimarse.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_h7fbadh7fbadh7fb.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Yonan və pozan — Yalong Emotion",
+    "slug": "yonan-pozan-yalong-emotion",
+    "category": "Yonanlar",
+    "description": "Gülən üz dizaynlı yonan və pozan bir gövdədə. Yonqar qutusu ilə, parlaq rənglərdə.",
+    "colors": [
+      "yaşıl",
+      "firuzəyi",
+      "çəhrayı"
+    ],
+    "price": 1.6,
+    "salePrice": null,
+    "stock": 45,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/yonan-pozan-yalong-emotion.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_leff0yleff0yleff.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Yonan və pozan — Zhengda, çoxməqsədli",
+    "slug": "yonan-pozan-zhengda",
+    "category": "Yonanlar",
+    "description": "Bir gövdədə yonan və pozan. Şəffaf qapaqlı qutuda yonqar toplanır.",
+    "colors": [
+      "yaşıl",
+      "qırmızı",
+      "narıncı",
+      "mavi"
+    ],
+    "price": 1.5,
+    "salePrice": null,
+    "stock": 45,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/yonan-pozan-zhengda.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_wuprpnwuprpnwupr.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Çizim dəsti — Flexy, 4 parça, əyilən",
+    "slug": "cizim-desti-flexy-4-parca",
+    "category": "Xətkeşlər",
+    "description": "4 parçalı əyilə bilən çizim dəsti: 30 sm xətkeş, transportir və iki bucaqlıq. Sınmır, neon sarı rəng.",
+    "colors": [
+      "neon sarı"
+    ],
+    "price": 4,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/cizim-desti-flexy-4-parca.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_hbkavrhbkavrhbka.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Xətkeş dəsti — 4 parça, mavi",
+    "slug": "xetkes-desti-4-parca-mavi",
+    "category": "Xətkeşlər",
+    "description": "4 parçalı həndəsə dəsti: 20 sm xətkeş, transportir və iki bucaqlıq. Şəffaf mavi plastik.",
+    "colors": [
+      "mavi"
+    ],
+    "price": 3.5,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/xetkes-desti-4-parca-mavi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_7wasfc7wasfc7was.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Metal xətkeş — 20 sm, qoruyucu ilə",
+    "slug": "metal-xetkes-20-sm",
+    "category": "Xətkeşlər",
+    "description": "Paslanmayan poladdan 20 sm xətkeş. Santimetr və millimetr bölgüləri, asma deşiyi. Plastik qoruyucu qılafla.",
+    "colors": [],
+    "price": 2.5,
+    "salePrice": null,
+    "stock": 40,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/metal-xetkes-20-sm.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_asjcpuasjcpuasjc.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Metal xətkeş — 30 sm, qoruyucu ilə",
+    "slug": "metal-xetkes-30-sm",
+    "category": "Xətkeşlər",
+    "description": "Paslanmayan poladdan 30 sm xətkeş. Santimetr və millimetr bölgüləri, asma deşiyi. Narıncı plastik qılafla.",
+    "colors": [],
+    "price": 3,
+    "salePrice": null,
+    "stock": 35,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/metal-xetkes-30-sm.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_h3bjynh3bjynh3bj.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Taxta xətkeş — 20 sm",
+    "slug": "taxta-xetkes-20-sm",
+    "category": "Xətkeşlər",
+    "description": "20 sm taxta xətkeş. İki tərəfli bölgü, hamar kənarlar.",
+    "colors": [],
+    "price": 0.8,
+    "salePrice": null,
+    "stock": 70,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/taxta-xetkes-20-sm.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_nfugonfugonfugon.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Taxta xətkeş — 30 sm",
+    "slug": "taxta-xetkes-30-sm",
+    "category": "Xətkeşlər",
+    "description": "30 sm taxta xətkeş. Aydın oxunan santimetr bölgüləri, hamar kənarlar.",
+    "colors": [],
+    "price": 1,
+    "salePrice": null,
+    "stock": 60,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/taxta-xetkes-30-sm.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_80s02c80s02c80s0.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Transportir — Flexy, 180°",
+    "slug": "transportir-flexy",
+    "category": "Xətkeşlər",
+    "description": "180 dərəcəlik şəffaf transportir. Aydın oxunan bölgülər, əyilməyə davamlı plastik.",
+    "colors": [
+      "firuzəyi",
+      "çəhrayı"
+    ],
+    "price": 1.2,
+    "salePrice": null,
+    "stock": 50,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/transportir-flexy.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_jaogmijaogmijaog.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Pərgar dəsti — Tiantian, 8 parça",
+    "slug": "pergar-desti-tiantian-8-parca",
+    "category": "Pərgarlar",
+    "description": "8 parçalı riyaziyyat dəsti: metal pərgar, xətkeş, bucaqlıq, transportir, yonan, pozan və ehtiyat karandaş. Metal qutuda.",
+    "colors": [],
+    "price": 6.5,
+    "salePrice": null,
+    "stock": 20,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/pergar-desti-tiantian-8-parca.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_puid8wpuid8wpuid.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Riyaziyyat dəsti — MAP, 9 parça, 2 metal pərgar",
+    "slug": "riyaziyyat-desti-map-9-parca",
+    "category": "Pərgarlar",
+    "description": "MAP markalı 9 parçadan ibarət riyaziyyat dəsti. 2 metal pərgar, xətkeş, bucaqölçən və transportir daxildir. Metal qutuda.",
+    "colors": [],
+    "price": 7.5,
+    "salePrice": null,
+    "stock": 20,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/riyaziyyat-desti-map-9-parca.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_2ku22q2ku22q2ku2.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Hesablama lövhəsi — ayı formalı",
+    "slug": "hesablama-lovhesi-ayi",
+    "category": "Digər",
+    "description": "Ayı formalı hesablama lövhəsi (çötkə). 10 sıra rəngli muncuq, 1-10 rəqəmləri və hərflər. Riyaziyyatı öyrənməyə kömək edir.",
+    "colors": [
+      "yaşıl"
+    ],
+    "price": 6,
+    "salePrice": null,
+    "stock": 18,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/hesablama-lovhesi-ayi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_i64nvyi64nvyi64n.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Hesablama lövhəsi — çəhrayı, 1-100",
+    "slug": "hesablama-lovhesi-cehrayi",
+    "category": "Digər",
+    "description": "Çəhrayı-sarı çərçivəli hesablama lövhəsi. 10 sıra rəngli muncuq, 1-100 rəqəmləri, hərflər və riyazi işarələr.",
+    "colors": [
+      "çəhrayı"
+    ],
+    "price": 6.5,
+    "salePrice": null,
+    "stock": 18,
+    "isFeatured": false,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/hesablama-lovhesi-cehrayi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_wiyllmwiyllmwiyl.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Hesablama lövhəsi — narıncı çərçivəli",
+    "slug": "hesablama-lovhesi-narinci",
+    "category": "Digər",
+    "description": "Narıncı çərçivəli hesablama lövhəsi (çötkə). 10 sıra rəngli muncuq. Riyaziyyatı əyani öyrənmək üçün.",
+    "colors": [
+      "narıncı"
+    ],
+    "price": 5.5,
+    "salePrice": null,
+    "stock": 18,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/hesablama-lovhesi-narinci.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_xjzoe5xjzoe5xjzo.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Kitab dayağı — BTS, qatlanan",
+    "slug": "kitab-dayagi-bts",
+    "category": "Digər",
+    "description": "Qatlanan metal kitab dayağı. Hündürlüyü tənzimlənir, kitabı rahat oxumaq üçün stolüstü mövqedə saxlayır.",
+    "colors": [
+      "mavi"
+    ],
+    "price": 8,
+    "salePrice": null,
+    "stock": 15,
+    "isFeatured": true,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/kitab-dayagi-bts.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_ucrtzmucrtzmucrt.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Korrektor qələm — 7 ml, rəngli gövdə",
+    "slug": "korrektor-qelem-rengli-govde",
+    "category": "Digər",
+    "description": "7 ml korrektor qələm, metal uc. Tez quruyur, dəqiq düzəliş. Pastel rəngli gövdələrdə.",
+    "colors": [
+      "firuzəyi",
+      "çəhrayı",
+      "ağ"
+    ],
+    "price": 1.8,
+    "salePrice": null,
+    "stock": 45,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/korrektor-qelem-rengli-govde.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_ocoe41ocoe41ocoe.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Korrektor qələm — Civors",
+    "slug": "korrektor-qelem-civors",
+    "category": "Digər",
+    "description": "Çoxməqsədli korrektor qələm. Tez quruyur, metal ucla dəqiq düzəliş imkanı verir.",
+    "colors": [
+      "krem",
+      "açıq yaşıl"
+    ],
+    "price": 1.5,
+    "salePrice": null,
+    "stock": 50,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/korrektor-qelem-civors.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_g4z39hg4z39hg4z3.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Korrektor qələm — Igle",
+    "slug": "korrektor-qelem-igle",
+    "category": "Digər",
+    "description": "Metal uclu korrektor qələm. Tez quruyur, dəqiq düzəliş imkanı verir.",
+    "colors": [
+      "ağ"
+    ],
+    "price": 1.5,
+    "salePrice": null,
+    "stock": 50,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/korrektor-qelem-igle.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_965iqs965iqs965i.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Korrektor qələm — Yalong, metal uc",
+    "slug": "korrektor-qelem-yalong",
+    "category": "Digər",
+    "description": "Metal uclu korrektor qələm. Çoxməqsədli, tez quruyan formula.",
+    "colors": [
+      "krem"
+    ],
+    "price": 1.6,
+    "salePrice": null,
+    "stock": 50,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/korrektor-qelem-yalong.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_h3e4cwh3e4cwh3e4.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Plastilin — 12 rəng",
+    "slug": "plastilin-12-reng",
+    "category": "Digər",
+    "description": "12 rəngli yumşaq plastilin dəsti. 3 yaşdan yuxarı uşaqlar üçün, toksik deyil.",
+    "colors": [],
+    "price": 3.5,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/plastilin-12-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_1g3ns51g3ns51g3n.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Plastilin — 6 rəng",
+    "slug": "plastilin-6-reng",
+    "category": "Digər",
+    "description": "6 rəngli yumşaq plastilin dəsti. 3 yaşdan yuxarı uşaqlar üçün, toksik deyil.",
+    "colors": [],
+    "price": 2.2,
+    "salePrice": null,
+    "stock": 35,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/plastilin-6-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_7nw5yt7nw5yt7nw5.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Plastilin — 8 rəng",
+    "slug": "plastilin-8-reng",
+    "category": "Digər",
+    "description": "8 rəngli yumşaq plastilin dəsti. 3 yaşdan yuxarı uşaqlar üçün, toksik deyil.",
+    "colors": [],
+    "price": 2.8,
+    "salePrice": null,
+    "stock": 35,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/plastilin-8-reng.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_8u04o18u04o18u04.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Plastilin dəsti — alətlərlə, qutuda",
+    "slug": "plastilin-desti-aletlerle",
+    "category": "Digər",
+    "description": "Plastik qutuda plastilin dəsti. İçində rəngli plastilin və modelləşdirmə alətləri var.",
+    "colors": [
+      "çəhrayı",
+      "yaşıl",
+      "mavi"
+    ],
+    "price": 3,
+    "salePrice": null,
+    "stock": 30,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/plastilin-desti-aletlerle.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_rl8e81rl8e81rl8e.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Plastilin lövhəsi — A4, unicorn",
+    "slug": "plastilin-lovhesi-a4-unicorn",
+    "category": "Digər",
+    "description": "A4 ölçülü plastilin işi üçün lövhə. İki plastik alət və bölmələr daxildir. Masanı kirlətmir.",
+    "colors": [
+      "çəhrayı"
+    ],
+    "price": 4.5,
+    "salePrice": null,
+    "stock": 20,
+    "isFeatured": false,
+    "genderHint": "QIZ",
+    "images": [
+      "/uploads/products/plastilin-lovhesi-a4-unicorn.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_9wuh6m9wuh6m9wuh.jpg"
+    ],
+    "confidence": "high"
+  },
+  {
+    "name": "Plastilin lövhəsi — firuzəyi, alətlərlə",
+    "slug": "plastilin-lovhesi-firuzeyi",
+    "category": "Digər",
+    "description": "Plastilin işi üçün bölmələri olan lövhə. İki plastik alət daxildir. Masanı kirlətmir, asan yuyulur.",
+    "colors": [
+      "firuzəyi"
+    ],
+    "price": 4.5,
+    "salePrice": null,
+    "stock": 20,
+    "isFeatured": false,
+    "genderHint": null,
+    "images": [
+      "/uploads/products/plastilin-lovhesi-firuzeyi.jpg"
+    ],
+    "sourceFiles": [
+      "Gemini_Generated_Image_usl1jbusl1jbusl1.jpg"
+    ],
+    "confidence": "high"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($paths = @\\(\"C:\\\\Program Files\\\\Docker\\\\Docker\\\\resources\\\\bin\\\\docker.exe\",\"C:\\\\Program Files\\\\Docker\\\\Docker\\\\Docker Desktop.exe\",\"$env:LOCALAPPDATA\\\\Docker\"\\); foreach \\($p in $paths\\) { \"{0} -> {1}\" -f $p, \\(Test-Path $p\\) }; Write-Output \"--- wsl ---\"; try { wsl --status } catch { \"wsl yoxdur\" }; Write-Output \"--- psql ---\"; \\(Get-Command psql -ErrorAction SilentlyContinue\\).Source)",
+      "PowerShell(node -e \"console.log\\(require\\('crypto'\\).randomBytes\\(32\\).toString\\('hex'\\)\\)\")",
+      "PowerShell($env:PYTHONIOENCODING=\"utf-8\"; [Console]::OutputEncoding = [System.Text.Encoding]::UTF8; npx tsx scratch-check.ts)",
+      "PowerShell(docker compose up *)",
+      "PowerShell(node -e \"const b=require\\('bcryptjs'\\); console.log\\(b.hashSync\\('sederek-dummy-timing-guard', 12\\)\\);\")",
+      "PowerShell(npm run *)"
+    ]
+  }
+}

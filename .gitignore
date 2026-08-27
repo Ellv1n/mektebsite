@@ -1,0 +1,52 @@
+# bağımlılıqlar
+/node_modules
+/.pnp
+.pnp.*
+
+# next.js
+/.next/
+/out/
+next-env.d.ts
+
+# produksiya
+/build
+
+# gizli dəyərlər
+.env
+.env*.local
+!.env.example
+
+# prisma
+/prisma/*.db
+/prisma/*.db-journal
+
+# Admin panelindən yüklənən şəkillər git-ə getmir.
+# Kataloq şəkilləri (products/, categories/) isə saytın işləməsi üçün lazımdır — onlar qalır.
+/public/uploads/*
+!/public/uploads/products/
+!/public/uploads/categories/
+
+# Mənbə fotolar — 294 MB və public/uploads/products qovluğundakı nüsxələrlə eynidir.
+# Git-ə göndərilmir. Bu qovluq yalnız kataloqu SIFIRDAN yenidən qurmaq üçün lazımdır
+# (`npm run catalog`). Kataloq artıq qurulub və `sederek/product-catalog.json`
+# faylında saxlanılır, ona görə təmiz klonda sayt problemsiz işləyir.
+/sederek/sederekphoto/
+
+# əməliyyat sistemi
+.DS_Store
+Thumbs.db
+
+# log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# redaktor
+/.idea
+/.vscode/*
+!/.vscode/extensions.json
+
+# test / tsbuild
+/coverage
+*.tsbuildinfo

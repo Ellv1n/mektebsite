@@ -1,0 +1,12 @@
+# Sətir sonluqlarını normallaşdırır — Windows və Linux arasında
+# faylların "hamısı dəyişib" kimi görünməsinin qarşısını alır.
+* text=auto eol=lf
+
+# İkili fayllar — heç bir çevirmə aparılmır
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary

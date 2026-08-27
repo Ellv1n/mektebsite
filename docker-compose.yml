@@ -1,0 +1,38 @@
+# Sədərək onlayn mağaza — lokal inkişaf üçün verilənlər bazası.
+# YALNIZ Postgres Docker-də qalxır; Next.js layihəsi host maşında `npm run dev` ilə işləyir.
+#
+# İşə salmaq:   docker compose up -d
+# Dayandırmaq:  docker compose down          (məlumat qalır)
+# Tam silmək:   docker compose down -v       (DİQQƏT: bütün baza məlumatı silinir)
+
+services:
+  db:
+    image: postgres:16
+    container_name: sederek-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: sederek
+      POSTGRES_PASSWORD: sederek_local_2026
+      POSTGRES_DB: sederek_shop
+      # Azərbaycan hərfləri (ə, ı, ö, ü, ç, ş, ğ) üçün UTF-8 collation
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8 --locale=C.UTF-8"
+    ports:
+      # host:container
+      # DİQQƏT: bu maşında artıq PostgreSQL 15 Windows xidməti 5432 portunu tutub,
+      # ona görə host tərəfdə 5433 işlədilir. Konteynerin içində port yenə 5432-dir.
+      # Bu dəyəri dəyişsən .env-dəki DATABASE_URL-i də eyni portla yenilə.
+      - "5433:5432"
+    volumes:
+      # Adlandırılmış volume — konteyner silinsə də baza məlumatı qalır
+      - sederek_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      # `docker compose up -d` bazanın həqiqətən hazır olmasını gözləsin
+      test: ["CMD-SHELL", "pg_isready -U sederek -d sederek_shop"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+      start_period: 10s
+
+volumes:
+  sederek_pgdata:
+    name: sederek_pgdata
