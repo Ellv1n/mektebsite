@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-import { GENDER_LABELS, PAYMENT_METHOD_LABEL, type Gender } from "@/lib/constants";
+import { PAYMENT_METHOD_LABEL } from "@/lib/constants";
 import { formatQepik } from "@/lib/money";
 
 /**
@@ -24,7 +24,8 @@ type Summary = {
     quantity: number;
     priceQepik: number;
     color: string | null;
-    gender: Gender;
+    /** Məhsulun bir neçə variantı varsa — "Variant 3", yoxsa null */
+    variant: string | null;
     note: string | null;
   }[];
   subtotalQepik: number;
@@ -135,8 +136,8 @@ export function OrderSuccess({
                   </span>
                 </div>
                 <p className="mt-0.5 text-xs text-gray-500">
-                  {item.quantity} ədəd · Rəng: {item.color ?? "seçilməyib"} ·{" "}
-                  {GENDER_LABELS[item.gender]}
+                  {item.quantity} ədəd · Rəng: {item.color ?? "seçilməyib"}
+                  {item.variant && ` · ${item.variant}`}
                 </p>
                 {item.note && <p className="mt-0.5 text-xs text-gray-500">Qeyd: {item.note}</p>}
               </li>

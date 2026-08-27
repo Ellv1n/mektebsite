@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { OrderStatusControl } from "@/components/admin/OrderStatusControl";
+import { variantLabel } from "@/lib/cart";
 import { PrintButton } from "@/components/admin/PrintButton";
 import {
   GENDER_LABELS,
@@ -97,7 +98,7 @@ export default async function AdminOrderDetailPage({
                     <th className="px-4 py-2.5 font-semibold">Məhsul</th>
                     <th className="px-4 py-2.5 text-center font-semibold">Say</th>
                     <th className="px-4 py-2.5 font-semibold">Rəng</th>
-                    <th className="px-4 py-2.5 font-semibold">Kimin üçün</th>
+                    <th className="px-4 py-2.5 font-semibold">Variant</th>
                     <th className="px-4 py-2.5 font-semibold">Qeyd</th>
                     <th className="px-4 py-2.5 text-right font-semibold">Məbləğ</th>
                   </tr>
@@ -135,7 +136,19 @@ export default async function AdminOrderDetailPage({
                         )}
                       </td>
                       <td className="whitespace-nowrap px-4 py-3 text-gray-700">
-                        {item.gender ? GENDER_LABELS[item.gender as Gender] : "—"}
+                        {item.imageIndex === null ? (
+                          <span className="text-gray-400">—</span>
+                        ) : (
+                          <span className="font-semibold text-gray-900">
+                            {variantLabel(item.imageIndex)}
+                          </span>
+                        )}
+                        {/* KÖHNƏ sifarişlər: "Kimin üçün" seçimi saytdan çıxarılıb */}
+                        {item.gender && (
+                          <span className="mt-0.5 block text-xs text-gray-400">
+                            {GENDER_LABELS[item.gender as Gender]}
+                          </span>
+                        )}
                       </td>
                       <td className="px-4 py-3 text-gray-700">
                         {item.note ? item.note : <span className="text-gray-400">—</span>}

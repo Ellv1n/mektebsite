@@ -5,15 +5,14 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 import { useCart } from "./CartProvider";
-import type { CartItem } from "@/lib/cart";
-import { GENDER_LABELS, GENDERS, type Gender } from "@/lib/constants";
+import { variantLabel, type CartItem } from "@/lib/cart";
 import { formatQepik } from "@/lib/money";
 
 const OTHER_COLOR = "__diger__";
 
 /**
  * Səbətdəki bir sətir (ecommerce.md §2.5).
- * Say dəyişdirilə, seçimlər (rəng / kimin üçün / qeyd) redaktə edilə, sətir silinə bilər.
+ * Say dəyişdirilə, seçimlər (variant / rəng / qeyd) redaktə edilə, sətir silinə bilər.
  */
 export function CartItemRow({ item }: { item: CartItem }) {
   const { updateQuantity, updateOptions, remove } = useCart();
@@ -21,6 +20,7 @@ export function CartItemRow({ item }: { item: CartItem }) {
   const [noteDraft, setNoteDraft] = useState(item.note ?? "");
 
   const hasColorList = item.availableColors.length > 0;
+  const hasVariants = item.availableImages.length > 1;
   const colorInList = item.color !== null && item.availableColors.includes(item.color);
   const [customColor, setCustomColor] = useState(colorInList ? "" : (item.color ?? ""));
 
@@ -84,10 +84,12 @@ export function CartItemRow({ item }: { item: CartItem }) {
               <span className="text-gray-400">Rəng:</span>{" "}
               <span className="font-medium">{item.color ?? "seçilməyib"}</span>
             </li>
-            <li>
-              <span className="text-gray-400">Kimin üçün:</span>{" "}
-              <span className="font-medium">{GENDER_LABELS[item.gender]}</span>
-            </li>
+            {hasVariants && (
+              <li>
+                <span className="text-gray-400">Variant:</span>{" "}
+                <span className="font-medium">{variantLabel(item.imageIndex)}</span>
+              </li>
+            )}
           </ul>
           {item.note && (
             <p className="mt-1 text-sm text-gray-600">
@@ -192,34 +194,40 @@ export function CartItemRow({ item }: { item: CartItem }) {
             )}
           </div>
 
-          <fieldset>
-            <legend className="mb-1.5 block text-sm font-medium text-gray-700">Kimin üçün</legend>
-            <div className="grid grid-cols-3 gap-2">
-              {GENDERS.map((value) => {
-                const selected = item.gender === value;
-                return (
-                  <label
-                    key={value}
-                    className={`cursor-pointer rounded-lg border px-2 py-2 text-center text-sm font-medium transition ${
-                      selected
-                        ? "border-brand-500 bg-brand-50 text-brand-700"
-                        : "border-gray-300 bg-white text-gray-600 hover:border-gray-400"
-                    }`}
-                  >
-                    <input
-                      type="radio"
-                      name={`gender-cart-${item.key}`}
-                      value={value}
-                      checked={selected}
-                      onChange={() => updateOptions(item.key, { gender: value as Gender })}
-                      className="sr-only"
-                    />
-                    {GENDER_LABELS[value]}
-                  </label>
-                );
-              })}
+          {hasVariants && (
+            <div>
+              <span className="mb-1.5 block text-sm font-medium text-gray-700">Variant</span>
+              <ul className="grid grid-cols-4 gap-2">
+                {item.availableImages.map((src, index) => {
+                  const selected = index === item.imageIndex;
+                  return (
+                    <li key={src}>
+                      <button
+                        type="button"
+                        onClick={() => updateOptions(item.key, { imageIndex: index, image: src })}
+                        aria-label={variantLabel(index)}
+                        aria-pressed={selected}
+                        className={`relative aspect-square w-full overflow-hidden rounded-lg border bg-white transition ${
+                          selected
+                            ? "border-brand-500 ring-2 ring-brand-200"
+                            : "border-gray-200 hover:border-gray-300"
+                        }`}
+                      >
+                        <Image src={src} alt="" fill sizes="70px" className="object-contain p-1" />
+                        <span
+                          className={`absolute bottom-0 left-0 right-0 py-0.5 text-center text-[10px] font-semibold ${
+                            selected ? "bg-brand-500 text-white" : "bg-white/85 text-gray-500"
+                          }`}
+                        >
+                          {index + 1}
+                        </span>
+                      </button>
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
-          </fieldset>
+          )}
 
           <div>
             <label className="mb-1.5 block text-sm font-medium text-gray-700">

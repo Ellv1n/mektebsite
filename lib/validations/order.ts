@@ -1,6 +1,5 @@
 import { z } from "zod";
 
-import { GENDERS } from "../constants";
 import { isValidAzPhone, PHONE_ERROR_MESSAGE } from "../phone";
 
 /**
@@ -20,7 +19,14 @@ export const OrderItemInputSchema = z.object({
     .min(1, "Say ən azı 1 olmalıdır")
     .max(999, "Say çox böyükdür"),
   color: z.string().trim().max(50, "Rəng adı çox uzundur").nullable().default(null),
-  gender: z.enum(GENDERS, { errorMap: () => ({ message: "Kimin üçün olduğunu seçin" }) }),
+  // Seçilmiş variantın şəkil sırası. Server bunu məhsulun şəkil siyahısı ilə
+  // yenidən yoxlayır — siyahıdan kənar dəyər əsas şəklə çevrilir.
+  imageIndex: z
+    .number({ invalid_type_error: "Variant seçimi düzgün deyil" })
+    .int("Variant seçimi düzgün deyil")
+    .min(0, "Variant seçimi düzgün deyil")
+    .max(49, "Variant seçimi düzgün deyil")
+    .default(0),
   note: z.string().trim().max(500, "Qeyd çox uzundur").nullable().default(null),
 });
 

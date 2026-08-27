@@ -67,7 +67,7 @@ export function ProductCard({ product }: { product: ShopProduct }) {
               id: product.id,
               slug: product.slug,
               name: product.name,
-              image: product.image,
+              images: product.images,
               priceQepik: product.priceQepik,
               colors: product.colors,
               stock: product.stock,

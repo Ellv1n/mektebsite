@@ -99,7 +99,7 @@ model Order {
 
 // ─────────────────────────────────────────────────────────────
 // Sifariş sətri
-// Diqqət: color / gender / note müştərinin səbətdə etdiyi seçimlərdir və
+// Diqqət: variant / color / note müştərinin səbətdə etdiyi seçimlərdir və
 // admin panelində hər məhsulun yanında MÜTLƏQ göstərilir (ecommerce.md §2.4, §3.5).
 // ─────────────────────────────────────────────────────────────
 model OrderItem {
@@ -117,9 +117,18 @@ model OrderItem {
   price        Decimal @db.Decimal(10, 2)
   quantity     Int
 
-  color  String? // müştərinin seçdiyi / yazdığı rəng
+  color String? // müştərinin seçdiyi / yazdığı rəng
+  note  String? // müştərinin bu məhsula aid əlavə qeydi
+
+  // Müştərinin seçdiyi variant — məhsulun şəkil siyahısındakı sıra (0-dan başlayır).
+  // `productImage` elə həmin şəklin özüdür; bu sahə isə admin panelində
+  // "Variant 3" kimi göstərmək üçündür. Köhnə sifarişlərdə boşdur.
+  imageIndex Int?
+
+  // KÖHNƏ SAHƏ: "Kimin üçün" seçimi saytdan çıxarılıb (2026-08-27).
+  // Sütun köhnə sifarişlərin məlumatı itməsin deyə saxlanılır,
+  // yeni sifarişlərdə həmişə boş qalır.
   gender String? // "OGLAN" | "QIZ" | "FERQI_YOXDUR"
-  note   String? // müştərinin bu məhsula aid əlavə qeydi
 
   @@index([orderId])
   @@index([productId])

@@ -24,7 +24,11 @@ export const SEED_CATEGORIES = [
   "Digər",
 ] as const;
 
-/** Səbətdəki "Kimin üçün" seçimi (ecommerce.md §2.4). */
+/**
+ * KÖHNƏ SAHƏ: "Kimin üçün" seçimi 2026-08-27-də saytdan çıxarıldı.
+ * Bu etiketlər yalnız köhnə sifarişləri (admin panel və izləmə səhifəsi)
+ * oxunaqlı göstərmək üçün qalır — yeni sifarişlərdə istifadə edilmir.
+ */
 export const GENDERS = ["OGLAN", "QIZ", "FERQI_YOXDUR"] as const;
 export type Gender = (typeof GENDERS)[number];
 
@@ -34,7 +38,6 @@ export const GENDER_LABELS: Record<Gender, string> = {
   FERQI_YOXDUR: "Fərqi yoxdur",
 };
 
-export const DEFAULT_GENDER: Gender = "FERQI_YOXDUR";
 
 /** Sifariş statusları və AZ qarşılıqları. */
 export const ORDER_STATUSES = [

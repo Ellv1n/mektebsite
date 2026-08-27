@@ -1,4 +1,4 @@
-import { GENDER_LABELS, PAYMENT_METHOD_LABEL, type Gender } from "../constants";
+import { PAYMENT_METHOD_LABEL } from "../constants";
 import { formatBakuDateTime } from "../date";
 import { formatQepik } from "../money";
 import { formatAzPhone } from "../phone";
@@ -9,7 +9,8 @@ import { formatAzPhone } from "../phone";
  * E-poçt klientlərinin çoxu `<style>` bloklarını silir — bütün stillər
  * elementin öz `style` atributundadır.
  *
- * ⚠️ Hər məhsulun yanında RƏNG, KİMİN ÜÇÜN və QEYD mütləq göstərilir.
+ * ⚠️ Hər məhsulun yanında VARİANT, RƏNG və QEYD mütləq göstərilir —
+ * müştərinin hansı variantdan istədiyi buradan dərhal görünməlidir.
  */
 
 export type OrderEmailItem = {
@@ -17,7 +18,8 @@ export type OrderEmailItem = {
   quantity: number;
   priceQepik: number;
   color: string | null;
-  gender: Gender;
+  /** Seçilmiş variantın adı, məs. "Variant 3" — məhsulun tək şəkli varsa null */
+  variant: string | null;
   note: string | null;
 };
 
@@ -75,7 +77,7 @@ export function renderOrderEmail(data: OrderEmailData): {
           <td style="${CELL}text-align:center;">${item.quantity}</td>
           <td style="${CELL}text-align:right;white-space:nowrap;">${formatQepik(item.priceQepik)}</td>
           <td style="${CELL}">${item.color ? escapeHtml(item.color) : "<span style=\"color:#9ca3af;\">seçilməyib</span>"}</td>
-          <td style="${CELL}">${GENDER_LABELS[item.gender]}</td>
+          <td style="${CELL}">${item.variant ? escapeHtml(item.variant) : "<span style=\"color:#9ca3af;\">—</span>"}</td>
           <td style="${CELL}">${item.note ? escapeHtml(item.note) : "<span style=\"color:#9ca3af;\">—</span>"}</td>
         </tr>`
     )
@@ -150,7 +152,7 @@ export function renderOrderEmail(data: OrderEmailData): {
             <th style="${HEAD_CELL}text-align:center;">Say</th>
             <th style="${HEAD_CELL}text-align:right;">Qiymət</th>
             <th style="${HEAD_CELL}">Rəng</th>
-            <th style="${HEAD_CELL}">Kimin üçün</th>
+            <th style="${HEAD_CELL}">Variant</th>
             <th style="${HEAD_CELL}">Qeyd</th>
           </tr>
         </thead>
@@ -204,7 +206,7 @@ export function renderOrderEmail(data: OrderEmailData): {
       (i) =>
         `  • ${i.productName} — ${i.quantity} ədəd × ${formatQepik(i.priceQepik)}` +
         ` | Rəng: ${i.color ?? "seçilməyib"}` +
-        ` | Kimin üçün: ${GENDER_LABELS[i.gender]}` +
+        (i.variant ? ` | ${i.variant}` : "") +
         ` | Qeyd: ${i.note ?? "—"}`
     ),
     "",

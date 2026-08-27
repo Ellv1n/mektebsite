@@ -5,7 +5,8 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 import { useCart } from "./CartProvider";
-import { GENDER_LABELS, PAYMENT_METHOD_LABEL } from "@/lib/constants";
+import { variantLabel } from "@/lib/cart";
+import { PAYMENT_METHOD_LABEL } from "@/lib/constants";
 import { formatQepik } from "@/lib/money";
 import { OrderInputSchema } from "@/lib/validations/order";
 
@@ -16,8 +17,16 @@ import { OrderInputSchema } from "@/lib/validations/order";
 
 const LAST_ORDER_KEY = "sederek-last-order";
 
-/** İstifadəçi yazdıqca nömrəni `+994 50 123 45 67` formasına salır. */
-function maskAzPhone(raw: string): string {
+/**
+ * Telefon sahəsi: `+994` sahənin SOLUNDA sabit yazıdır — müştəri onu yazmır,
+ * silə də bilmir, yalnız öz 9 rəqəmini daxil edir. Əvvəllər maska sahənin
+ * içinə `+994` yazırdı və müştərilər öz nömrəsini onun üstünə yazmağa
+ * çalışdıqda çaşırdı.
+ *
+ * Bu funksiya yazılanı `50 123 45 67` formasına salır; nömrəni kopyalayıb
+ * yapışdıranda əvvəldəki ölkə kodu (994) və ya sıfır (0) atılır.
+ */
+function maskAzPhoneLocal(raw: string): string {
   let digits = raw.replace(/\D/g, "");
   if (digits.startsWith("994")) digits = digits.slice(3);
   else if (digits.startsWith("0")) digits = digits.slice(1);
@@ -25,14 +34,20 @@ function maskAzPhone(raw: string): string {
 
   if (digits.length === 0) return "";
 
-  const parts = [
+  return [
     digits.slice(0, 2),
     digits.slice(2, 5),
     digits.slice(5, 7),
     digits.slice(7, 9),
-  ].filter((p) => p.length > 0);
+  ]
+    .filter((part) => part.length > 0)
+    .join(" ");
+}
 
-  return `+994 ${parts.join(" ")}`;
+/** Sahədəki yerli hissə → serverə göndərilən tam nömrə (`+994501234567`). */
+function fullPhone(local: string): string {
+  const digits = local.replace(/\D/g, "");
+  return digits === "" ? "" : `+994${digits}`;
 }
 
 type Values = {
@@ -88,7 +103,7 @@ export function CheckoutForm() {
     const payload = {
       firstName: values.firstName,
       lastName: values.lastName,
-      phone: values.phone,
+      phone: fullPhone(values.phone),
       city: values.city,
       address: values.address,
       email: values.email.trim() === "" ? null : values.email.trim(),
@@ -98,7 +113,7 @@ export function CheckoutForm() {
         productId: item.productId,
         quantity: item.quantity,
         color: item.color,
-        gender: item.gender,
+        imageIndex: item.imageIndex,
         note: item.note,
       })),
     };
@@ -143,7 +158,7 @@ export function CheckoutForm() {
               quantity: i.quantity,
               priceQepik: i.priceQepik,
               color: i.color,
-              gender: i.gender,
+              variant: i.availableImages.length > 1 ? variantLabel(i.imageIndex) : null,
               note: i.note,
             })),
             subtotalQepik,
@@ -223,17 +238,31 @@ export function CheckoutForm() {
               label="Telefon nömrəsi"
               required
               error={errFor("phone")}
-              hint="050, 051, 055, 070, 077, 010, 099"
+              hint="Yalnız öz nömrənizi yazın: 50, 51, 55, 70, 77, 10, 99 ilə başlayan 9 rəqəm"
             >
-              <input
-                value={values.phone}
-                onChange={(e) => set("phone", maskAzPhone(e.target.value))}
-                disabled={submitting}
-                inputMode="tel"
-                autoComplete="tel"
-                placeholder="+994 50 123 45 67"
-                className={field}
-              />
+              <div
+                className={`flex items-stretch overflow-hidden rounded-lg border border-gray-300 transition focus-within:border-brand-500 focus-within:ring-2 focus-within:ring-brand-200 ${
+                  submitting ? "bg-gray-50" : "bg-white"
+                }`}
+              >
+                {/* Ölkə kodu sabitdir — müştəri onu yazmır, silə də bilmir */}
+                <span
+                  aria-hidden="true"
+                  className="flex select-none items-center border-r border-gray-300 bg-gray-50 px-3 text-base font-semibold text-gray-600"
+                >
+                  +994
+                </span>
+                <input
+                  value={values.phone}
+                  onChange={(e) => set("phone", maskAzPhoneLocal(e.target.value))}
+                  disabled={submitting}
+                  inputMode="tel"
+                  autoComplete="tel-national"
+                  aria-label="Telefon nömrəsi, ölkə kodundan sonrakı hissə"
+                  placeholder="50 123 45 67"
+                  className="w-full bg-transparent px-3 py-2.5 text-base outline-none disabled:bg-gray-50"
+                />
+              </div>
             </Field>
           </div>
 
@@ -334,8 +363,8 @@ export function CheckoutForm() {
                 </span>
               </div>
               <p className="mt-0.5 text-xs text-gray-500">
-                {item.quantity} ədəd · {item.color ?? "rəng seçilməyib"} ·{" "}
-                {GENDER_LABELS[item.gender]}
+                {item.quantity} ədəd · {item.color ?? "rəng seçilməyib"}
+                {item.availableImages.length > 1 && ` · ${variantLabel(item.imageIndex)}`}
               </p>
               {item.note && <p className="mt-0.5 text-xs text-gray-500">Qeyd: {item.note}</p>}
             </li>

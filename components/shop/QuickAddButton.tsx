@@ -7,8 +7,8 @@ import { AddToCartForm, type AddToCartProduct } from "./AddToCartForm";
 /**
  * Məhsul kartındakı "Səbətə at" düyməsi (ecommerce.md §2.2).
  *
- * Birbaşa səbətə atmır — kiçik pəncərə açır, çünki §2.4-ə görə rəng,
- * kimin üçün və qeyd sahələri MÜTLƏQ göstərilməlidir.
+ * Birbaşa səbətə atmır — kiçik pəncərə açır, çünki §2.4-ə görə variant,
+ * rəng və qeyd sahələri MÜTLƏQ göstərilməlidir.
  */
 export function QuickAddButton({ product }: { product: AddToCartProduct }) {
   const [open, setOpen] = useState(false);

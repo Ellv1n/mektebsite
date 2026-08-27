@@ -1,29 +1,30 @@
-import { DEFAULT_GENDER, GENDERS, type Gender } from "./constants";
-
 /**
  * Səbətin məlumat modeli (ecommerce.md §2.4, §2.5).
  *
  * ⚠️ Ən vacib qayda: səbətdəki elementin kimliyi
- *    `productId + rəng + kimin üçün + qeyd`
- * kombinasiyasıdır. Eyni məhsul fərqli rənglə əlavə olunanda AYRI SƏTİR olur,
- * sayı artmır.
+ *    `productId + variant (şəkil) + rəng + qeyd`
+ * kombinasiyasıdır. Eyni məhsul fərqli variant və ya rənglə əlavə olunanda
+ * AYRI SƏTİR olur, sayı artmır — beləliklə admin panelində müştərinin
+ * hansı variantdan neçə ədəd istədiyi dəqiq görünür.
  *
  * Qiymət qəpik (tam ədəd) kimi saxlanılır — float yuvarlaqlaşma xətası olmasın.
  * Bu, yalnız ekranda göstərmək üçündür: yekun məbləği server yenidən hesablayır.
  */
 
 export type CartItem = {
-  /** productId|color|gender|note əsasında yaradılan təkrarsız açar */
+  /** productId|imageIndex|color|note əsasında yaradılan təkrarsız açar */
   key: string;
   productId: string;
   slug: string;
   name: string;
+  /** Müştərinin seçdiyi variantın şəkli */
   image: string | null;
+  /** Seçilmiş variantın məhsulun şəkil siyahısındakı sırası (0-dan başlayır) */
+  imageIndex: number;
   /** Endirim nəzərə alınmış effektiv qiymət, qəpiklə */
   priceQepik: number;
   quantity: number;
   color: string | null;
-  gender: Gender;
   note: string | null;
   /** Sayın yuxarı həddi üçün — sifariş anında server yenidən yoxlayır */
   stock: number;
@@ -32,6 +33,11 @@ export type CartItem = {
    * Səbətdə rəngi redaktə edərkən eyni dropdown göstərilsin deyə saxlanılır.
    */
   availableColors: string[];
+  /**
+   * Məhsulun bütün şəkilləri — səbətdə variantı dəyişmək üçün.
+   * Bir şəkil varsa variant seçimi ümumiyyətlə göstərilmir.
+   */
+  availableImages: string[];
 };
 
 /** Səbətə əlavə edilərkən lazım olan minimum məlumat. */
@@ -43,11 +49,11 @@ function normalize(value: string | null | undefined): string {
 
 export function cartItemKey(input: {
   productId: string;
+  imageIndex: number;
   color: string | null;
-  gender: Gender;
   note: string | null;
 }): string {
-  return [input.productId, normalize(input.color), input.gender, normalize(input.note)].join("|");
+  return [input.productId, input.imageIndex, normalize(input.color), normalize(input.note)].join("|");
 }
 
 /**
@@ -121,28 +127,43 @@ export function parseStoredCart(raw: string | null): CartItem[] {
       continue;
     }
 
-    const gender = GENDERS.includes(e.gender as Gender) ? (e.gender as Gender) : DEFAULT_GENDER;
     const color = typeof e.color === "string" && e.color.trim() !== "" ? e.color.trim() : null;
     const note = typeof e.note === "string" && e.note.trim() !== "" ? e.note.trim() : null;
+
+    const availableImages = Array.isArray(e.availableImages)
+      ? e.availableImages.filter((i): i is string => typeof i === "string")
+      : [];
+
+    // Köhnə səbətdə (variant əlavə edilməzdən əvvəl) bu sahə yoxdur → əsas şəkil
+    const imageIndex =
+      typeof e.imageIndex === "number" && Number.isInteger(e.imageIndex) && e.imageIndex >= 0
+        ? e.imageIndex
+        : 0;
 
     const base = {
       productId: e.productId,
       slug: e.slug,
       name: e.name,
       image: typeof e.image === "string" ? e.image : null,
+      imageIndex: availableImages.length > 0 ? Math.min(imageIndex, availableImages.length - 1) : imageIndex,
       priceQepik: Math.max(0, Math.round(e.priceQepik)),
       quantity: Math.min(e.quantity, 999),
       color,
-      gender,
       note,
       stock: typeof e.stock === "number" && Number.isFinite(e.stock) ? e.stock : 0,
       availableColors: Array.isArray(e.availableColors)
         ? e.availableColors.filter((c): c is string => typeof c === "string")
         : [],
+      availableImages,
     };
 
     items.push({ ...base, key: cartItemKey(base) });
   }
 
   return items;
+}
+
+/** Variantın müştəriyə göstərilən adı — məs. "Variant 3". */
+export function variantLabel(imageIndex: number): string {
+  return `Variant ${imageIndex + 1}`;
 }

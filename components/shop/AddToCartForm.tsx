@@ -1,25 +1,33 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
 import { useCart } from "./CartProvider";
-import { DEFAULT_GENDER, GENDER_LABELS, GENDERS, type Gender } from "@/lib/constants";
+import { variantLabel } from "@/lib/cart";
 
 /**
  * Səbətə əlavə etmə forması (ecommerce.md §2.4 — ⚠️ VACİB).
  *
- * Üç sahə mütləq göstərilir:
- *   1. Rəng      — admin siyahı veribsə dropdown + "Digər rəng yaz", yoxsa sərbəst mətn
- *   2. Kimin üçün — Oğlan / Qız / Fərqi yoxdur
+ * Göstərilən sahələr:
+ *   1. Variant   — məhsulun birdən çox şəkli varsa hansı variantın istəndiyi
+ *                  (məs. eyni dəftərin 3 fərqli üzü). Seçim sifarişə düşür,
+ *                  admin panelində "Variant 3" kimi görünür.
+ *   2. Rəng      — admin siyahı veribsə dropdown + "Digər rəng yaz", yoxsa sərbəst mətn
  *   3. Əlavə qeyd — sərbəst mətn, məcburi deyil
+ *
+ * Məhsul səhifəsində variant seçimi qalereyadan idarə olunur — orada
+ * `imageIndex` / `onImageIndexChange` ötürülür və forma öz kiçik şəkillərini
+ * göstərmir (eyni seçim iki yerdə təkrarlanmasın).
  */
 
 export type AddToCartProduct = {
   id: string;
   slug: string;
   name: string;
-  image: string | null;
+  /** Bütün variant şəkilləri — birincisi əsas şəkildir */
+  images: string[];
   priceQepik: number;
   colors: string[];
   stock: number;
@@ -32,25 +40,40 @@ export function AddToCartForm({
   product,
   onAdded,
   compact = false,
+  imageIndex: controlledIndex,
+  onImageIndexChange,
 }: {
   product: AddToCartProduct;
   onAdded?: () => void;
   compact?: boolean;
+  /** Kənardan idarə olunan variant seçimi (məhsul səhifəsindəki qalereya) */
+  imageIndex?: number;
+  onImageIndexChange?: (index: number) => void;
 }) {
   const { add } = useCart();
 
   const hasColorList = product.colors.length > 0;
   const outOfStock = product.stock <= 0;
+  const hasVariants = product.images.length > 1;
+  const controlled = controlledIndex !== undefined;
 
   const [quantity, setQuantity] = useState(1);
+  const [ownIndex, setOwnIndex] = useState(0);
   const [colorChoice, setColorChoice] = useState(hasColorList ? product.colors[0] : OTHER_COLOR);
   const [customColor, setCustomColor] = useState("");
-  const [gender, setGender] = useState<Gender>(DEFAULT_GENDER);
   const [note, setNote] = useState("");
   const [added, setAdded] = useState(false);
 
+  const imageIndex = controlled ? controlledIndex : ownIndex;
+
   const usingCustomColor = !hasColorList || colorChoice === OTHER_COLOR;
   const maxQuantity = product.stock > 0 ? Math.min(product.stock, 99) : 99;
+
+  function selectImage(index: number) {
+    if (controlled) onImageIndexChange?.(index);
+    else setOwnIndex(index);
+    setAdded(false);
+  }
 
   function changeQuantity(delta: number) {
     setQuantity((q) => Math.min(Math.max(1, q + delta), maxQuantity));
@@ -67,14 +90,15 @@ export function AddToCartForm({
       productId: product.id,
       slug: product.slug,
       name: product.name,
-      image: product.image,
+      image: product.images[imageIndex] ?? product.images[0] ?? null,
+      imageIndex,
       priceQepik: product.priceQepik,
       quantity,
       color: color === "" ? null : color,
-      gender,
       note: note.trim() === "" ? null : note.trim(),
       stock: product.stock,
       availableColors: product.colors,
+      availableImages: product.images,
     });
 
     setAdded(true);
@@ -97,7 +121,56 @@ export function AddToCartForm({
 
   return (
     <form onSubmit={handleSubmit} className={compact ? "space-y-4" : "space-y-5"}>
-      {/* 1. Rəng */}
+      {/* 1. Variant — yalnız bir neçə şəkil varsa */}
+      {hasVariants && (
+        <div>
+          <span className="mb-1.5 block text-sm font-medium text-gray-700">
+            Variant{" "}
+            <span className="font-normal text-gray-400">
+              — hansı şəkildəki məhsulu istəyirsiniz?
+            </span>
+          </span>
+
+          {controlled ? (
+            <p className="rounded-lg border border-brand-200 bg-brand-50 px-3 py-2.5 text-sm text-brand-800">
+              Seçilmiş: <strong>{variantLabel(imageIndex)}</strong> — yuxarıdakı
+              şəkillərdən birinə toxunaraq dəyişə bilərsiniz.
+            </p>
+          ) : (
+            <ul className="grid grid-cols-4 gap-2">
+              {product.images.map((src, index) => {
+                const selected = index === imageIndex;
+                return (
+                  <li key={src}>
+                    <button
+                      type="button"
+                      onClick={() => selectImage(index)}
+                      aria-label={variantLabel(index)}
+                      aria-pressed={selected}
+                      className={`relative aspect-square w-full overflow-hidden rounded-lg border bg-white transition ${
+                        selected
+                          ? "border-brand-500 ring-2 ring-brand-200"
+                          : "border-gray-200 hover:border-gray-300"
+                      }`}
+                    >
+                      <Image src={src} alt="" fill sizes="90px" className="object-contain p-1" />
+                      <span
+                        className={`absolute bottom-0 left-0 right-0 py-0.5 text-center text-[10px] font-semibold ${
+                          selected ? "bg-brand-500 text-white" : "bg-white/85 text-gray-500"
+                        }`}
+                      >
+                        {index + 1}
+                      </span>
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+        </div>
+      )}
+
+      {/* 2. Rəng */}
       <div>
         <label htmlFor={`color-${product.id}`} className="mb-1.5 block text-sm font-medium text-gray-700">
           Rəng
@@ -151,39 +224,6 @@ export function AddToCartForm({
           />
         )}
       </div>
-
-      {/* 2. Kimin üçün */}
-      <fieldset>
-        <legend className="mb-1.5 block text-sm font-medium text-gray-700">Kimin üçün</legend>
-        <div className="grid grid-cols-3 gap-2">
-          {GENDERS.map((value) => {
-            const selected = gender === value;
-            return (
-              <label
-                key={value}
-                className={`cursor-pointer rounded-lg border px-2 py-2.5 text-center text-sm font-medium transition ${
-                  selected
-                    ? "border-brand-500 bg-brand-50 text-brand-700"
-                    : "border-gray-300 text-gray-600 hover:border-gray-400"
-                }`}
-              >
-                <input
-                  type="radio"
-                  name={`gender-${product.id}`}
-                  value={value}
-                  checked={selected}
-                  onChange={() => {
-                    setGender(value);
-                    setAdded(false);
-                  }}
-                  className="sr-only"
-                />
-                {GENDER_LABELS[value]}
-              </label>
-            );
-          })}
-        </div>
-      </fieldset>
 
       {/* 3. Əlavə qeyd */}
       <div>
@@ -247,7 +287,9 @@ export function AddToCartForm({
           role="status"
           className="flex flex-wrap items-center justify-between gap-2 rounded-lg border border-green-200 bg-green-50 px-4 py-3 text-sm"
         >
-          <span className="font-medium text-green-800">Səbətə əlavə edildi</span>
+          <span className="font-medium text-green-800">
+            Səbətə əlavə edildi{hasVariants ? ` — ${variantLabel(imageIndex)}` : ""}
+          </span>
           <Link href="/sebet" className="font-semibold text-green-800 underline">
             Səbətə keç →
           </Link>

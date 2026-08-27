@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { AddToCartForm } from "@/components/shop/AddToCartForm";
-import { ProductGallery } from "@/components/shop/ProductGallery";
+import { ProductPurchase } from "@/components/shop/ProductPurchase";
 import { PAYMENT_METHOD_LABEL } from "@/lib/constants";
 import { formatQepik } from "@/lib/money";
 import { prisma } from "@/lib/prisma";
@@ -65,10 +64,34 @@ export default async function ProductDetailPage({ params }: Params) {
         <span className="text-gray-700">{product.name}</span>
       </nav>
 
-      <div className="grid gap-8 lg:grid-cols-2">
-        <ProductGallery images={product.images} name={product.name} />
-
-        <div>
+      <ProductPurchase
+        product={{
+          id: product.id,
+          slug: product.slug,
+          name: product.name,
+          images: product.images,
+          priceQepik: product.priceQepik,
+          colors: product.colors,
+          stock: product.stock,
+        }}
+        footer={
+          <ul className="mt-5 space-y-2 text-sm text-gray-600">
+            <li className="flex gap-2">
+              <span aria-hidden="true">•</span>
+              <span>{PAYMENT_METHOD_LABEL}</span>
+            </li>
+            <li className="flex gap-2">
+              <span aria-hidden="true">•</span>
+              <span>Rəngi və qeydi sifariş verərkən özünüz yazırsınız</span>
+            </li>
+            <li className="flex gap-2">
+              <span aria-hidden="true">•</span>
+              <span>Sifarişdən sonra sizinlə telefonla əlaqə saxlanılır</span>
+            </li>
+          </ul>
+        }
+      >
+        <>
           <p className="text-sm text-gray-500">{raw.category.name}</p>
           <h1 className="mt-1 text-2xl font-bold text-gray-900 sm:text-3xl">{product.name}</h1>
 
@@ -106,37 +129,8 @@ export default async function ProductDetailPage({ params }: Params) {
               </p>
             </div>
           )}
-
-          <div className="mt-6 rounded-xl border border-gray-200 bg-white p-4 sm:p-5">
-            <AddToCartForm
-              product={{
-                id: product.id,
-                slug: product.slug,
-                name: product.name,
-                image: product.image,
-                priceQepik: product.priceQepik,
-                colors: product.colors,
-                stock: product.stock,
-              }}
-            />
-          </div>
-
-          <ul className="mt-5 space-y-2 text-sm text-gray-600">
-            <li className="flex gap-2">
-              <span aria-hidden="true">•</span>
-              <span>{PAYMENT_METHOD_LABEL}</span>
-            </li>
-            <li className="flex gap-2">
-              <span aria-hidden="true">•</span>
-              <span>Rəngi və qeydi sifariş verərkən özünüz yazırsınız</span>
-            </li>
-            <li className="flex gap-2">
-              <span aria-hidden="true">•</span>
-              <span>Sifarişdən sonra sizinlə telefonla əlaqə saxlanılır</span>
-            </li>
-          </ul>
-        </div>
-      </div>
+        </>
+      </ProductPurchase>
     </main>
   );
 }

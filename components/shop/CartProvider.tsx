@@ -49,7 +49,7 @@ type CartContextValue = {
   updateQuantity: (key: string, quantity: number) => void;
   updateOptions: (
     key: string,
-    options: Partial<Pick<CartItem, "color" | "gender" | "note">>
+    options: Partial<Pick<CartItem, "color" | "note" | "image" | "imageIndex">>
   ) => void;
   remove: (key: string) => void;
   clear: () => void;
@@ -97,7 +97,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     setItems((prev) => {
       const index = prev.findIndex((i) => i.key === key);
 
-      // Eyni açar — say artır. Fərqli rəng/qeyd → yeni sətir.
+      // Eyni açar — say artır. Fərqli variant/rəng/qeyd → yeni sətir.
       if (index >= 0) {
         const next = [...prev];
         const merged = next[index].quantity + input.quantity;
@@ -126,7 +126,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const updateOptions = useCallback(
-    (key: string, options: Partial<Pick<CartItem, "color" | "gender" | "note">>) => {
+    (key: string, options: Partial<Pick<CartItem, "color" | "note" | "image" | "imageIndex">>) => {
       setItems((prev) => {
         const index = prev.findIndex((i) => i.key === key);
         if (index < 0) return prev;

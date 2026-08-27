@@ -82,7 +82,7 @@ eq('"Digər"', slugify("Digər"), "diger");
 eq('"Plastilin — 12 rəng"', slugify("Plastilin — 12 rəng"), "plastilin-12-reng");
 
 console.log("\n--- SƏBƏT (ecommerce.md §2.4) ---");
-const baseItem = { productId: "p1", color: "qırmızı", gender: "OGLAN" as const, note: null };
+const baseItem = { productId: "p1", imageIndex: 0, color: "qırmızı", note: null };
 
 eq(
   "eyni məhsul + eyni seçim → EYNİ açar",
@@ -95,8 +95,8 @@ eq(
   true
 );
 eq(
-  "eyni məhsul + fərqli KİMİN ÜÇÜN → AYRI açar",
-  cartItemKey(baseItem) !== cartItemKey({ ...baseItem, gender: "QIZ" }),
+  "eyni məhsul + fərqli VARİANT (şəkil) → AYRI açar",
+  cartItemKey(baseItem) !== cartItemKey({ ...baseItem, imageIndex: 2 }),
   true
 );
 eq(
@@ -116,17 +116,24 @@ eq(
 );
 
 const stored = JSON.stringify([
-  { productId: "p1", slug: "a", name: "A", image: null, priceQepik: 250, quantity: 2, color: "mavi", gender: "QIZ", note: null, stock: 10 },
-  { productId: "p1", slug: "a", name: "A", image: null, priceQepik: 250, quantity: 1, color: "yaşıl", gender: "QIZ", note: null, stock: 10 },
+  { productId: "p1", slug: "a", name: "A", image: null, imageIndex: 0, priceQepik: 250, quantity: 2, color: "mavi", note: null, stock: 10 },
+  { productId: "p1", slug: "a", name: "A", image: null, imageIndex: 2, priceQepik: 250, quantity: 1, color: "mavi", note: null, stock: 10 },
   { productId: "x", quantity: 0 },
   "pozuq sətir",
-  { productId: "p2", slug: "b", name: "B", image: null, priceQepik: 1000, quantity: 1, color: null, gender: "NAMELUM", note: null, stock: 5 },
+  // Köhnə formatlı qeyd — variant sahəsi yoxdur, əsas şəklə düşməlidir
+  { productId: "p2", slug: "b", name: "B", image: null, priceQepik: 1000, quantity: 1, color: null, gender: "QIZ", note: null, stock: 5 },
 ]);
 const parsed = parseStoredCart(stored);
 eq("pozuq qeydlər atılır", parsed.length, 3);
 eq("ümumi say", cartCount(parsed), 4);
 eq("ara cəmi", formatQepik(cartSubtotalQepik(parsed)), "17.50 ₼");
-eq("naməlum gender → Fərqi yoxdur", parsed[2].gender, "FERQI_YOXDUR");
+eq("variant seçimi saxlanılır", parsed[1].imageIndex, 2);
+eq("köhnə səbət qeydi → əsas variant", parsed[2].imageIndex, 0);
+eq(
+  "eyni rəng, fərqli variant → AYRI sətir",
+  parsed[0].key !== parsed[1].key,
+  true
+);
 eq("boş localStorage", parseStoredCart(null).length, 0);
 eq("pozuq JSON", parseStoredCart("{{{").length, 0);
 

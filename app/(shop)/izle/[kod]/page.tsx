@@ -3,6 +3,7 @@ import Link from "next/link";
 import { headers } from "next/headers";
 
 import { OrderTimeline } from "@/components/shop/OrderTimeline";
+import { variantLabel } from "@/lib/cart";
 import { GENDER_LABELS, PAYMENT_METHOD_LABEL, type Gender } from "@/lib/constants";
 import { formatBakuDateTime } from "@/lib/date";
 import { formatAzn } from "@/lib/money";
@@ -116,10 +117,19 @@ export default async function TrackOrderPage({
                     <span className="text-gray-400">Rəng:</span>{" "}
                     {item.color ?? "seçilməyib"}
                   </li>
-                  <li>
-                    <span className="text-gray-400">Kimin üçün:</span>{" "}
-                    {item.gender ? GENDER_LABELS[item.gender as Gender] : "—"}
-                  </li>
+                  {item.imageIndex !== null && (
+                    <li>
+                      <span className="text-gray-400">Variant:</span>{" "}
+                      {variantLabel(item.imageIndex)}
+                    </li>
+                  )}
+                  {/* KÖHNƏ sifarişlərdə qalan seçim */}
+                  {item.gender && (
+                    <li>
+                      <span className="text-gray-400">Kimin üçün:</span>{" "}
+                      {GENDER_LABELS[item.gender as Gender]}
+                    </li>
+                  )}
                 </ul>
                 {item.note && (
                   <p className="mt-0.5 text-sm text-gray-500">

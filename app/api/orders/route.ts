@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 
 import { badRequest, readJsonBody, zodErrorResponse } from "@/lib/api";
+import { variantLabel } from "@/lib/cart";
 import { PAYMENT_METHOD } from "@/lib/constants";
 import { renderOrderEmail, type OrderEmailItem } from "@/lib/email/order-notification";
 import { sendMail } from "@/lib/mail";
@@ -102,10 +103,19 @@ export async function POST(request: Request) {
   const lines = input.items.map((item) => {
     const product = productById.get(item.productId)!;
     const priceQepik = effectivePriceQepik(product.price, product.salePrice);
+
+    // Müştəri hansı şəkli (variantı) seçibsə o saxlanılır. Siyahıdan kənar
+    // dəyər gəlsə əsas şəklə qayıdırıq — client-in göndərdiyi indeksə
+    // olduğu kimi etibar edilmir (§6).
+    const imageIndex =
+      item.imageIndex < product.images.length ? item.imageIndex : 0;
+    const hasVariants = product.images.length > 1;
+
     return {
       ...item,
       productName: product.name,
-      productImage: product.images[0] ?? null,
+      productImage: product.images[imageIndex] ?? null,
+      imageIndex: hasVariants ? imageIndex : null,
       priceQepik,
     };
   });
@@ -195,7 +205,7 @@ export async function POST(request: Request) {
               price: fromQepik(line.priceQepik),
               quantity: line.quantity,
               color: line.color,
-              gender: line.gender,
+              imageIndex: line.imageIndex,
               note: line.note,
             })),
           },
@@ -255,7 +265,7 @@ export async function POST(request: Request) {
         quantity: line.quantity,
         priceQepik: line.priceQepik,
         color: line.color,
-        gender: line.gender,
+        variant: line.imageIndex === null ? null : variantLabel(line.imageIndex),
         note: line.note,
       }));
 

@@ -26,7 +26,7 @@ export function CartView() {
       <div className="mt-8 rounded-xl border border-dashed border-gray-300 bg-white px-6 py-16 text-center">
         <p className="text-base font-medium text-gray-700">Səbətiniz boşdur</p>
         <p className="mx-auto mt-1 max-w-sm text-sm text-gray-500">
-          Bəyəndiyiniz məhsulları səbətə əlavə edin — rəngini və kimin üçün olduğunu özünüz
+          Bəyəndiyiniz məhsulları səbətə əlavə edin — variantını və rəngini özünüz
           seçəcəksiniz.
         </p>
         <Link
