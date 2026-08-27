@@ -42,7 +42,7 @@ export function OrderStatusControl({
       });
 
       const data = (await response.json().catch(() => null)) as
-        | { error?: string; stockChanged?: string }
+        | { error?: string; stockChanged?: string; emailSent?: boolean | null }
         | null;
 
       if (!response.ok) {
@@ -51,8 +51,16 @@ export function OrderStatusControl({
         return;
       }
 
-      if (data?.stockChanged === "restored") setInfo("Məhsullar stoka qaytarıldı.");
-      if (data?.stockChanged === "reserved") setInfo("Məhsullar yenidən stokdan çıxarıldı.");
+      // Stok və e-poçt xəbərləri bir sətirdə birləşdirilir
+      const messages: string[] = [];
+      if (data?.stockChanged === "restored") messages.push("Məhsullar stoka qaytarıldı.");
+      if (data?.stockChanged === "reserved") messages.push("Məhsullar yenidən stokdan çıxarıldı.");
+
+      if (data?.emailSent === true) messages.push("Müştəriyə e-poçt göndərildi.");
+      else if (data?.emailSent === false) messages.push("Diqqət: müştəriyə e-poçt göndərilmədi.");
+      else messages.push("Müştəri e-poçt ünvanı verməyib — məktub göndərilmədi.");
+
+      setInfo(messages.join(" "));
 
       router.refresh();
     } catch {
@@ -88,7 +96,7 @@ export function OrderStatusControl({
         })}
       </div>
 
-      {info && <p className="mt-2 text-sm text-green-700">{info}</p>}
+      {info && <p className="mt-2 text-sm text-gray-600">{info}</p>}
       {error && (
         <p role="alert" className="mt-2 rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700">
           {error}

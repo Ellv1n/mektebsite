@@ -153,6 +153,7 @@ export function CheckoutForm() {
             orderNumber: data.orderNumber,
             trackingCode: data.trackingCode ?? null,
             firstName: values.firstName,
+            email: values.email.trim() === "" ? null : values.email.trim(),
             items: items.map((i) => ({
               name: i.name,
               quantity: i.quantity,
@@ -267,7 +268,11 @@ export function CheckoutForm() {
           </div>
 
           <div className="mt-4">
-            <Field label="E-poçt" error={errFor("email")} hint="könüllü — sifariş təsdiqi üçün">
+            <Field
+              label="E-poçt"
+              error={errFor("email")}
+              hint="könüllü — yazsanız sifariş təsdiqini və status dəyişikliklərini e-poçtla göndəririk"
+            >
               <input
                 type="email"
                 value={values.email}

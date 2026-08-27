@@ -10,6 +10,7 @@
     "typecheck": "tsc --noEmit",
     "check": "tsx scripts/check-helpers.ts",
     "catalog": "tsx scripts/build-catalog.ts",
+    "mail:preview": "tsx scripts/preview-emails.ts",
     "db:up": "docker compose up -d",
     "db:down": "docker compose down",
     "db:logs": "docker compose logs -f db",

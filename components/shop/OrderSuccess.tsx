@@ -19,6 +19,8 @@ type Summary = {
   orderNumber: string;
   trackingCode?: string | null;
   firstName: string;
+  /** Müştəri e-poçt yazıbsa — təsdiq məktubu həmin ünvana gedib */
+  email?: string | null;
   items: {
     name: string;
     quantity: number;
@@ -88,6 +90,11 @@ export function OrderSuccess({
         <p className="mt-3 text-sm text-green-800">
           Sizinlə tezliklə telefonla əlaqə saxlanılacaq.
         </p>
+        {summary?.email && (
+          <p className="mt-1.5 text-sm text-green-800">
+            Təsdiq məktubu <strong>{summary.email}</strong> ünvanına göndərildi.
+          </p>
+        )}
       </div>
 
       {/* İzləmə kodu — sifarişi saytda görmək üçün yeganə açardır */}

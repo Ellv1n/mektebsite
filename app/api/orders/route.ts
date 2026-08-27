@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import { badRequest, readJsonBody, zodErrorResponse } from "@/lib/api";
 import { variantLabel } from "@/lib/cart";
 import { PAYMENT_METHOD } from "@/lib/constants";
+import { renderOrderConfirmationEmail } from "@/lib/email/order-confirmation";
 import { renderOrderEmail, type OrderEmailItem } from "@/lib/email/order-notification";
 import { sendMail } from "@/lib/mail";
 import {
@@ -258,17 +259,21 @@ export async function POST(request: Request) {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ?? "";
   const notificationEmail = process.env.ORDER_NOTIFICATION_EMAIL?.trim();
 
+  const displayTrackingCode = formatTrackingCode(trackingCode);
+  const trackingUrl = `${siteUrl}/izle/${trackingCode}`;
+
+  // Həm admin bildirişi, həm müştəri təsdiqi eyni sətirlərdən qurulur
+  const emailItems: OrderEmailItem[] = lines.map((line) => ({
+    productName: line.productName,
+    quantity: line.quantity,
+    priceQepik: line.priceQepik,
+    color: line.color,
+    variant: line.imageIndex === null ? null : variantLabel(line.imageIndex),
+    note: line.note,
+  }));
+
   if (notificationEmail) {
     try {
-      const emailItems: OrderEmailItem[] = lines.map((line) => ({
-        productName: line.productName,
-        quantity: line.quantity,
-        priceQepik: line.priceQepik,
-        color: line.color,
-        variant: line.imageIndex === null ? null : variantLabel(line.imageIndex),
-        note: line.note,
-      }));
-
       const { subject, html, text } = renderOrderEmail({
         orderNumber,
         createdAt,
@@ -287,8 +292,8 @@ export async function POST(request: Request) {
         deliveryFeeQepik,
         totalQepik,
         adminUrl: `${siteUrl}/admin/sifarisler/${orderId}`,
-        trackingCode: formatTrackingCode(trackingCode),
-        trackingUrl: `${siteUrl}/izle/${trackingCode}`,
+        trackingCode: displayTrackingCode,
+        trackingUrl,
       });
 
       const result = await sendMail({ to: notificationEmail, subject, html, text });
@@ -303,8 +308,40 @@ export async function POST(request: Request) {
     console.warn("[orders] ORDER_NOTIFICATION_EMAIL .env-də təyin edilməyib — bildiriş göndərilmədi.");
   }
 
+  // ── Müştəriyə təsdiq məktubu ─────────────────────────────────────
+  // E-poçt sahəsi könüllüdür: ünvan yazılmayıbsa göndəriləcək yer yoxdur.
+  // Bu blok da sifarişi HEÇ VAXT ləğv etmir — xəta yalnız log-a düşür.
+  if (input.email) {
+    try {
+      const { subject, html, text } = renderOrderConfirmationEmail({
+        orderNumber,
+        createdAt,
+        firstName: input.firstName,
+        city: input.city,
+        address: input.address,
+        note: input.note,
+        items: emailItems,
+        subtotalQepik,
+        promoCode: promoDisplayCode,
+        discountPct,
+        discountQepik,
+        deliveryFeeQepik,
+        totalQepik,
+        trackingCode: displayTrackingCode,
+        trackingUrl,
+      });
+
+      const result = await sendMail({ to: input.email, subject, html, text });
+      if (!result.sent && result.mode === "error") {
+        console.error(`[orders] #${orderNumber} müştəri təsdiqi göndərilmədi: ${result.reason}`);
+      }
+    } catch (error) {
+      console.error(`[orders] #${orderNumber} müştəri təsdiqi xətası:`, error);
+    }
+  }
+
   return NextResponse.json(
-    { ok: true, orderNumber, trackingCode: formatTrackingCode(trackingCode) },
+    { ok: true, orderNumber, trackingCode: displayTrackingCode },
     { status: 201 }
   );
 }

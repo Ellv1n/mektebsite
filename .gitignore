@@ -32,6 +32,9 @@ next-env.d.ts
 # faylında saxlanılır, ona görə təmiz klonda sayt problemsiz işləyir.
 /sederek/sederekphoto/
 
+# e-poçt şablonlarının önizləməsi (npm run mail:preview)
+/mail-preview/
+
 # əməliyyat sistemi
 .DS_Store
 Thumbs.db

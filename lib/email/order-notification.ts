@@ -2,6 +2,7 @@ import { PAYMENT_METHOD_LABEL } from "../constants";
 import { formatBakuDateTime } from "../date";
 import { formatQepik } from "../money";
 import { formatAzPhone } from "../phone";
+import { CELL, escapeHtml, HEAD_CELL, type MailLineItem } from "./shared";
 
 /**
  * Yeni sifariş bildirişi (ecommerce.md §2.8).
@@ -13,15 +14,8 @@ import { formatAzPhone } from "../phone";
  * müştərinin hansı variantdan istədiyi buradan dərhal görünməlidir.
  */
 
-export type OrderEmailItem = {
-  productName: string;
-  quantity: number;
-  priceQepik: number;
-  color: string | null;
-  /** Seçilmiş variantın adı, məs. "Variant 3" — məhsulun tək şəkli varsa null */
-  variant: string | null;
-  note: string | null;
-};
+/** Admin bildirişindəki məhsul sətri — təsdiq məktubu ilə eyni formadır. */
+export type OrderEmailItem = MailLineItem;
 
 export type OrderEmailData = {
   orderNumber: string;
@@ -45,21 +39,6 @@ export type OrderEmailData = {
   trackingCode: string;
   trackingUrl: string;
 };
-
-/** Müştərinin yazdığı mətn e-poçt HTML-inə birbaşa qoyulmur. */
-function escapeHtml(value: string): string {
-  return value
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
-}
-
-const CELL = "padding:8px 10px;border-bottom:1px solid #e5e7eb;font-size:14px;color:#1f2937;";
-const HEAD_CELL =
-  "padding:8px 10px;background:#f3f4f6;border-bottom:2px solid #d1d5db;font-size:12px;" +
-  "text-transform:uppercase;letter-spacing:.4px;color:#4b5563;text-align:left;";
 
 export function renderOrderEmail(data: OrderEmailData): {
   subject: string;
