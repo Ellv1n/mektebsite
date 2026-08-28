@@ -20,6 +20,7 @@ export function OrderStatusControl({
 }) {
   const router = useRouter();
   const [busy, setBusy] = useState<OrderStatusValue | null>(null);
+  const [resending, setResending] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [info, setInfo] = useState<string | null>(null);
   /** E-poçt xəbərinin rəngi: göndərilibsə yaşıl, göndərilməyibsə narıncı */
@@ -79,6 +80,35 @@ export function OrderStatusControl({
     }
   }
 
+  /** Cari status barədə məktubu müştəriyə əl ilə yenidən göndərir. */
+  async function resendEmail() {
+    setError(null);
+    setInfo(null);
+    setResending(true);
+
+    try {
+      const response = await fetch(`/api/admin/orders/${orderId}/resend-email`, {
+        method: "POST",
+      });
+
+      const data = (await response.json().catch(() => null)) as
+        | { error?: string; email?: string }
+        | null;
+
+      if (!response.ok) {
+        setError(data?.error ?? "Məktub göndərilmədi.");
+        return;
+      }
+
+      setInfoOk(true);
+      setInfo(`✓ Məktub yenidən göndərildi${data?.email ? ` → ${data.email}` : ""}.`);
+    } catch {
+      setError("Serverə qoşulmaq mümkün olmadı.");
+    } finally {
+      setResending(false);
+    }
+  }
+
   return (
     <div className="no-print">
       <p className="mb-2 text-sm font-semibold text-gray-900">Status</p>
@@ -104,6 +134,15 @@ export function OrderStatusControl({
           );
         })}
       </div>
+
+      <button
+        type="button"
+        onClick={resendEmail}
+        disabled={resending || busy !== null}
+        className="mt-3 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-50 disabled:opacity-50"
+      >
+        {resending ? "Göndərilir…" : "Cari status barədə məktubu yenidən göndər"}
+      </button>
 
       {info && (
         <p
