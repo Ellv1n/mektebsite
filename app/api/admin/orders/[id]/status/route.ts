@@ -132,6 +132,10 @@ export async function PATCH(request: Request, { params }: Params) {
 
       const result = await sendMail({ to: order.email, subject, html, text });
       emailSent = result.sent;
+      console.log(
+        `[admin/orders] #${order.orderNumber} → ${nextStatus}: status məktubu ` +
+          `${order.email} ünvanına — ${result.sent ? "göndərildi" : `göndərilmədi (${result.mode})`}`
+      );
       if (!result.sent && result.mode === "error") {
         console.error(
           `[admin/orders] #${order.orderNumber} status məktubu göndərilmədi: ${result.reason}`
@@ -141,6 +145,12 @@ export async function PATCH(request: Request, { params }: Params) {
       emailSent = false;
       console.error(`[admin/orders] #${order.orderNumber} status məktubu xətası:`, error);
     }
+  } else {
+    // Səbəbin log-da görünməsi vacibdir: "məktub gəlmir" şikayətinin ən tez-tez
+    // rast gəlinən səbəbi sifarişdə ünvanın olmamasıdır (köhnə sifarişlər).
+    console.warn(
+      `[admin/orders] #${order.orderNumber}: sifarişdə e-poçt ünvanı yoxdur — status məktubu göndərilmədi.`
+    );
   }
 
   return NextResponse.json({

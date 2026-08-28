@@ -22,6 +22,8 @@ export function OrderStatusControl({
   const [busy, setBusy] = useState<OrderStatusValue | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [info, setInfo] = useState<string | null>(null);
+  /** E-poçt xəbərinin rəngi: göndərilibsə yaşıl, göndərilməyibsə narıncı */
+  const [infoOk, setInfoOk] = useState(true);
 
   async function change(next: OrderStatusValue) {
     if (next === status) return;
@@ -56,9 +58,16 @@ export function OrderStatusControl({
       if (data?.stockChanged === "restored") messages.push("Məhsullar stoka qaytarıldı.");
       if (data?.stockChanged === "reserved") messages.push("Məhsullar yenidən stokdan çıxarıldı.");
 
-      if (data?.emailSent === true) messages.push("Müştəriyə e-poçt göndərildi.");
-      else if (data?.emailSent === false) messages.push("Diqqət: müştəriyə e-poçt göndərilmədi.");
-      else messages.push("Müştəri e-poçt ünvanı verməyib — məktub göndərilmədi.");
+      if (data?.emailSent === true) {
+        messages.push("✓ Müştəriyə e-poçt göndərildi.");
+        setInfoOk(true);
+      } else if (data?.emailSent === false) {
+        messages.push("⚠ Müştəriyə e-poçt GÖNDƏRİLMƏDİ — server logunda səbəbə bax.");
+        setInfoOk(false);
+      } else {
+        messages.push("⚠ Bu sifarişdə müştərinin e-poçt ünvanı yoxdur — məktub göndərilmədi.");
+        setInfoOk(false);
+      }
 
       setInfo(messages.join(" "));
 
@@ -96,7 +105,17 @@ export function OrderStatusControl({
         })}
       </div>
 
-      {info && <p className="mt-2 text-sm text-gray-600">{info}</p>}
+      {info && (
+        <p
+          className={`mt-2 rounded-lg border px-3 py-2 text-sm ${
+            infoOk
+              ? "border-green-200 bg-green-50 text-green-800"
+              : "border-amber-300 bg-amber-50 text-amber-900"
+          }`}
+        >
+          {info}
+        </p>
+      )}
       {error && (
         <p role="alert" className="mt-2 rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700">
           {error}
